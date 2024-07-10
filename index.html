@@ -41,19 +41,22 @@
           <h2>Accueil</h2>
           <div class="grid-2-col">
             <div class="about-container">
-              <h1>LUCAS AMSELLEM</h1>
-              <h3>Développeur front-end</h3>
+              <div>
+                <h1>LUCAS AMSELLEM</h1>
+                <h3>Développeur front-end</h3>
+              </div>
+
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                doloremque, delectus, similique corporis modi magni alias, nobis
-                nihil unde inventore ratione voluptatum debitis voluptas ad illo
-                enim totam! Sint, sequi.
+                100% autodicate, j'ai commencé à apprendre le développement web
+                en septembre 2023 en parallèle de mon alternance en tant
+                qu'agent artistique dans la musique classique.
               </p>
 
               <p>
                 Veuillez cliquer
                 <span
                   ><a
+                    class="cv-link"
                     href="https://fr.linkedin.com/in/lucas-amsellem-7894442b0?original_referer=https%3A%2F%2Fduckduckgo.com%2F"
                     target="_blank"
                     >ici</a
@@ -82,6 +85,13 @@
                   </li>
                   <li>
                     <ion-icon name="logo-github"></ion-icon>
+                  </li>
+                  <li>
+                    <img
+                      src="img/logo-vscode.svg"
+                      alt="Logo Visual Studio Code"
+                      class="logo-vscode"
+                    />
                   </li>
                 </ul>
               </div>
@@ -128,18 +138,6 @@
                   </li>
                   <li>
                     <img
-                      src="img/logo-udemy.png"
-                      alt="Logo Udemy"
-                      class="logo-udemy"
-                    />
-                    <p>
-                      The Ultimate React Course 2024: React, Next.js, Redux &
-                      More
-                      <span class="certificate">En cours</span>
-                    </p>
-                  </li>
-                  <li>
-                    <img
                       src="img/paris-logo.png"
                       alt="Logo Mairie de Paris"
                       class="logo-udemy"
@@ -158,6 +156,23 @@
                   </li>
                 </ul>
               </div>
+
+              <div>
+                <h4>En apprentissage</h4>
+                <ul class="qualifications-list">
+                  <li>
+                    <img
+                      src="img/logo-udemy.png"
+                      alt="Logo Udemy"
+                      class="logo-udemy"
+                    />
+                    <p>
+                      The Ultimate React Course 2024: React, Next.js, Redux &
+                      More
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -169,16 +184,16 @@
             <h2>Projets</h2>
           </div>
           <div class="grid-2-col projets-container">
-            <div class="capital-guesser">
-              <h5>Capital Guesser</h5>
-              <em class="projets-description">Quizz de capitales</em>
+            <div>
+              <h4>Capital Guesser</h4>
+              <p class="projets-description">Quizz de capitales</p>
               <a
                 href="https://lucasamsellem.github.io/capital-guesser/"
                 target="_blank"
               >
                 <img
                   src="img/capital-guesser-thumbnail.PNG"
-                  alt=""
+                  alt="Aperçu d'un quizz sur des capitales"
                   class="projets-thumnail"
                 />
               </a>
@@ -198,11 +213,11 @@
               </div>
             </div>
 
-            <div class="order-taking">
-              <h5 class="order-taking">Order Taking</h5>
-              <em class="projets-description">
-                Simulation d'une réservation en ligne de fast-food
-              </em>
+            <div>
+              <h4>Order Taking</h4>
+              <p class="projets-description">
+                Simulation de réservation en ligne de fast-food
+              </p>
 
               <a
                 href="https://lucasamsellem.github.io/order-taking/"
@@ -210,7 +225,7 @@
               >
                 <img
                   src="img/order-taking-thumbnail.PNG"
-                  alt=""
+                  alt="Aperçu de la simulation de réservation en ligne de fast-food"
                   class="projets-thumnail"
                 />
               </a>
@@ -237,11 +252,24 @@
         <div class="side-padding">
           <h2>Contact</h2>
 
-          <div>
-            <ion-icon name="mail-outline"></ion-icon>
-            <a href="mailto:lucas.amsellem21@gmail.com" class="mail"
-              >lucas.amsellem21@gmail.com</a
-            >
+          <div class="contact-container">
+            <ul>
+              <li>
+                <a href="mailto:lucas.amsellem21@gmail.com"
+                  ><ion-icon name="mail-outline" class="logo-mail"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://fr.linkedin.com/in/lucas-amsellem-7894442b0?original_referer="
+                  target="_blank"
+                  ><ion-icon
+                    name="logo-linkedin"
+                    class="logo-linkedin"
+                  ></ion-icon
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

@@ -22,7 +22,7 @@ FONT SIZE SYSTEM (px)
 html {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
   scroll-behavior: smooth;
 }
 
@@ -48,7 +48,7 @@ section {
 }
 
 body {
-  background-color: var(--grey-background);
+  /* background-color: var(--grey-background); */
   color: var(--font-color);
 }
 
@@ -90,8 +90,13 @@ a:visited {
   padding: 3em;
 }
 
-#projets {
-  background-color: white;
+#accueil,
+#contact {
+  background-color: var(--grey-background);
+}
+
+h1 {
+  color: var(--purple);
 }
 
 h2 {
@@ -108,6 +113,7 @@ h2 {
 h4 {
   text-align: center;
   margin-bottom: 2.4rem;
+  letter-spacing: 1px;
 }
 
 .grid-2-col {
@@ -118,62 +124,70 @@ h4 {
   justify-items: center;
 }
 
+/* ABOUT */
+
 .about-container {
   display: flex;
   flex-direction: column;
+  gap: 4rem;
 }
 
 .about-container h3 {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .about-container p {
   color: var(--grey-text);
   font-size: 1.6rem;
-  margin: 2.4rem 0;
+  /* margin: 2.4rem 0; */
 }
+
+.cv-link {
+  text-decoration: underline;
+}
+
+/* SKILLS */
 
 .skills-container {
   display: grid;
   gap: 6.4rem;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.068);
   padding: 1em;
   border-radius: 10px;
   background-color: white;
-}
-
-.projets-container > div {
-  padding: 1em 0;
-  background-color: var(--grey-background);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.068);
-
-  transition: all 0.2s;
-}
-.projets-container > div:hover {
-  transform: translateY(-7px);
 }
 
 .skills-logos,
 .skills-logos-smaller {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1.6rem;
 }
-.skills-logos ion-icon {
-  font-size: 8rem;
+
+.skills-logos ion-icon,
+.logo-vscode {
   filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.117));
   transition: all 0.2s;
+}
+
+.skills-logos ion-icon {
+  font-size: 8rem;
+}
+.logo-vscode {
+  height: 7.5rem;
 }
 .skills-logos-smaller ion-icon {
   font-size: 4rem;
 }
-.skills-logos ion-icon:hover {
+.skills-logos ion-icon:hover,
+.logo-vscode:hover {
   transform: scale(1.1);
 }
 
 .skills-logos-smaller li {
-  display: inline;
+  display: inline-block;
 }
 
 .logo-html {
@@ -191,26 +205,32 @@ h4 {
 .logo-udemy {
   width: 100%;
 }
+.logo-linkedin {
+  color: #0a66c2;
+  font-size: 6rem;
+}
+.logo-mail {
+  font-size: 7rem;
+  color: var(--purple);
+}
+
+.qualifications-list {
+  display: grid;
+  gap: 3.2rem;
+}
 
 .qualifications-list li {
   display: grid;
   grid-template-columns: 2.2rem 1fr;
   align-items: center;
   gap: 2.4rem;
-  margin-bottom: 3.2rem;
   font-size: 1.6rem;
-}
-
-.capital-guesser,
-.order-taking {
-  text-align: center;
 }
 
 .certificate {
   text-decoration: underline;
   color: var(--grey-text) !important;
   font-size: 1.4rem;
-  margin-left: 1.6rem;
 
   transition: all 0.2s;
 }
@@ -218,8 +238,29 @@ h4 {
   color: rgb(192, 192, 192) !important;
 }
 
+/* PROJETS */
+
+.projets-container > div {
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em 0;
+  background-color: var(--grey-background);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.068);
+
+  transition: all 0.2s;
+}
+.projets-container > div:hover {
+  transform: translateY(-7px);
+}
+
+.projets-container h4 {
+  /* color: var(--purple); */
+  margin-bottom: 0.6rem;
+}
+
 .projets-description {
   font-size: 1.4rem;
+  font-style: italic;
 }
 
 .projets-thumnail {
@@ -228,12 +269,64 @@ h4 {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.056);
   cursor: pointer;
   text-align: center;
-  margin: 3.2rem 0;
+  margin: 4.2rem 0;
 
   transition: all 0.2s;
 }
 
-.mail {
-  color: var(--font-color);
-  font-size: 2rem;
+.contact-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  header {
+    font-size: 1.4rem;
+    padding: 1em 2em;
+  }
+
+  .nav-items {
+    gap: 2.4rem;
+  }
+
+  .nav-items li {
+    padding: 0.4em 0.8em;
+  }
+
+  .side-padding {
+    padding: 4em;
+  }
+
+  section {
+    margin: 6rem 0;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 6rem;
+  }
+
+  .grid-2-col {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  .skills-logos ion-icon {
+    font-size: 6rem;
+  }
+
+  .skills-logos-smaller ion-icon {
+    font-size: 3rem;
+  }
+
+  .projets-thumnail {
+    width: 90%;
+  }
+
+  .mail {
+    font-size: 1.6rem;
+  }
 }
