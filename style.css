@@ -282,7 +282,7 @@ h4 {
 }
 
 /* Responsive Design */
-@media (max-width: 767px) {
+@media (max-width: 910px) {
   header {
     font-size: 1.4rem;
     padding: 1em 2em;
@@ -297,7 +297,7 @@ h4 {
   }
 
   .side-padding {
-    padding: 4em;
+    padding: 2em;
   }
 
   section {
@@ -316,6 +316,74 @@ h4 {
 
   .skills-logos ion-icon {
     font-size: 6rem;
+  }
+
+  .logo-vscode {
+    height: 5rem;
+  }
+
+  .skills-logos-smaller ion-icon {
+    font-size: 3rem;
+  }
+
+  .projets-thumnail {
+    width: 90%;
+  }
+
+  .mail {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 540px) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    font-size: 1.4rem;
+    padding: 1em 2em;
+    flex-direction: column;
+  }
+
+  #accueil {
+    margin-top: 10rem;
+  }
+  .name-header {
+    margin-bottom: 1.6rem;
+  }
+
+  .nav-items {
+    gap: 2.4rem;
+  }
+
+  .nav-items li {
+    padding: 0.4em 0.8em;
+  }
+
+  .side-padding {
+    padding: 2em;
+  }
+
+  section {
+    margin: 6rem 0;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 6rem;
+  }
+
+  .grid-2-col {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  .skills-logos ion-icon {
+    font-size: 5rem;
+  }
+
+  .logo-vscode {
+    height: 4rem;
   }
 
   .skills-logos-smaller ion-icon {
