@@ -263,7 +263,7 @@ h4 {
   font-style: italic;
 }
 
-.projets-thumnail {
+.projets-thumbnail {
   width: 80%;
   border-radius: 10px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.056);
@@ -326,7 +326,7 @@ h4 {
     font-size: 3rem;
   }
 
-  .projets-thumnail {
+  .projets-thumbnail {
     width: 90%;
   }
 
@@ -390,7 +390,7 @@ h4 {
     font-size: 3rem;
   }
 
-  .projets-thumnail {
+  .projets-thumbnail {
     width: 90%;
   }
 
