@@ -95,6 +95,10 @@ a:visited {
   background-color: var(--grey-background);
 }
 
+.contact-section {
+  margin-bottom: 0;
+}
+
 h1 {
   color: var(--purple);
 }
