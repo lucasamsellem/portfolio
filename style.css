@@ -21,7 +21,7 @@ FONT SIZE SYSTEM (px)
 
 html {
   font-size: 62.5%;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
 }
@@ -85,7 +85,7 @@ a:visited {
 }
 
 .side-padding {
-  max-width: 125rem;
+  max-width: 135rem;
   margin: 0 auto;
   padding: 3em;
 }
@@ -93,10 +93,6 @@ a:visited {
 #accueil,
 #contact {
   background-color: var(--grey-background);
-}
-
-.contact-section {
-  margin-bottom: 0;
 }
 
 h1 {
@@ -120,12 +116,19 @@ h4 {
   letter-spacing: 1px;
 }
 
-.grid-2-col {
+.grid-2-col,
+.grid-3-col {
   font-size: 2.5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 4.8rem;
   justify-items: center;
+}
+
+.grid-2-col {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-col {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* ABOUT */
@@ -183,7 +186,7 @@ h4 {
   height: 7.5rem;
 }
 .skills-logos-smaller ion-icon {
-  font-size: 4rem;
+  font-size: 4.4rem;
 }
 .skills-logos ion-icon:hover,
 .logo-vscode:hover {
@@ -245,9 +248,11 @@ h4 {
 /* PROJETS */
 
 .projets-container > div {
+  display: grid;
+  align-items: center;
   text-align: center;
   border-radius: 10px;
-  padding: 1em 0;
+  padding: 1em;
   background-color: var(--grey-background);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.068);
 
@@ -258,7 +263,6 @@ h4 {
 }
 
 .projets-container h4 {
-  /* color: var(--purple); */
   margin-bottom: 0.6rem;
 }
 
@@ -268,7 +272,7 @@ h4 {
 }
 
 .projets-thumbnail {
-  width: 80%;
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.056);
   cursor: pointer;
@@ -278,15 +282,15 @@ h4 {
   transition: all 0.2s;
 }
 
-.projets-thumbnail:hover {
-    box-shadow: 0 0 3px #00000040;
-}
-
 .contact-container ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2.4rem;
+}
+
+.contact-section {
+  margin-bottom: 0;
 }
 
 /* Responsive Design */
@@ -318,8 +322,13 @@ h4 {
   }
 
   .grid-2-col {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 3.2rem;
+  }
+
+  .grid-3-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .skills-logos ion-icon {
@@ -343,7 +352,7 @@ h4 {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 725px) {
   html {
     font-size: 50%;
   }
@@ -381,7 +390,8 @@ h4 {
     margin-bottom: 6rem;
   }
 
-  .grid-2-col {
+  .grid-2-col,
+  .grid-3-col {
     grid-template-columns: 1fr;
     gap: 3.2rem;
   }
