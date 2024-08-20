@@ -170,6 +170,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1.6rem;
 }
 
@@ -180,10 +181,13 @@ h4 {
 }
 
 .skills-logos ion-icon {
-  font-size: 8rem;
+  font-size: 6rem;
 }
 .logo-vscode {
-  height: 7.5rem;
+  height: 5.6rem;
+}
+.git-icon {
+  color: #f1502f;
 }
 .skills-logos-smaller ion-icon {
   font-size: 4.4rem;
@@ -209,7 +213,7 @@ h4 {
 .logo-react {
   color: #61dbfb;
 }
-.logo-udemy {
+.udemy-logo {
   width: 100%;
 }
 .logo-linkedin {
@@ -336,7 +340,7 @@ h4 {
   }
 
   .skills-logos-smaller ion-icon {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   .projets-thumbnail {
@@ -348,21 +352,23 @@ h4 {
   }
 }
 
+/* PHONE */
 @media (max-width: 725px) {
   html {
     font-size: 50%;
   }
   header {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 1em 2em;
     flex-direction: column;
   }
 
+  .name-header {
+    display: none;
+  }
+
   #accueil {
     margin-top: 10rem;
-  }
-  .name-header {
-    margin-bottom: 1.6rem;
   }
 
   .nav-items {
@@ -401,7 +407,7 @@ h4 {
   }
 
   .skills-logos-smaller ion-icon {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .projets-thumbnail {
