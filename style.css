@@ -178,7 +178,6 @@ h4 {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  height: 5rem;
   font-size: 1.6rem;
   background-color: var(--grey-background);
   color: var(--font-color);
@@ -190,12 +189,6 @@ h4 {
 .skills-logos li ion-icon,
 .skills-logos-smaller ion-icon {
   font-size: calc(1em + 1vh + 0.5vw);
-}
-
-.skills-logos-smaller ion-icon {
-  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.117));
-
-  transition: all 0.2s;
 }
 
 /* LOGO */
