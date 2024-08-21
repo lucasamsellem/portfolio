@@ -145,9 +145,8 @@ h4 {
 }
 
 .about-container p {
-  color: var(--grey-text);
   font-size: 1.6rem;
-  /* margin: 2.4rem 0; */
+  color: var(--grey-text);
 }
 
 .cv-link {
@@ -174,40 +173,28 @@ h4 {
   gap: 1.6rem;
 }
 
-.skills-logos ion-icon,
-.logo {
-  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.117));
-  transition: all 0.2s;
+.skills-logos li {
+  font-size: 1.6rem;
+  background-color: var(--grey-background);
+  color: var(--font-color);
+  padding: 0.5em 1.5em;
+  border-radius: 10px;
+  font-weight: 600;
 }
 
-.skills-logos ion-icon {
-  font-size: 5.2rem;
-}
-.logo-vscode {
-  height: 4.4rem;
-}
-.tailwind-logo {
-  height: 3.6rem;
-}
-.git-icon {
-  color: #f1502f;
-}
 .skills-logos-smaller ion-icon {
-  font-size: 4.4rem;
-}
-.skills-logos-smaller .tailwind-logo {
-  height: 2.8rem;
-}
+  font-size: calc(1em + 1vh + 0.5vw);
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.117));
 
-.skills-logos ion-icon:hover,
-.logo:hover {
-  transform: scale(1.1);
+  transition: all 0.2s;
 }
 
 .skills-logos-smaller li {
   display: inline-block;
 }
-
+.udemy-logo {
+  width: 100%;
+}
 .logo-html {
   color: #e44d26;
 }
@@ -220,8 +207,8 @@ h4 {
 .logo-react {
   color: #61dbfb;
 }
-.udemy-logo {
-  width: 100%;
+.tailwind-logo {
+  height: calc(0.5em + 1vh + 0.5vw);
 }
 .logo-linkedin {
   color: #0a66c2;
@@ -330,18 +317,6 @@ h4 {
     gap: 3.2rem;
   }
 
-  .skills-logos ion-icon {
-    font-size: 6rem;
-  }
-
-  .logo-vscode {
-    height: 5rem;
-  }
-
-  .skills-logos-smaller ion-icon {
-    font-size: 5rem;
-  }
-
   .projets-thumbnail {
     width: 90%;
   }
@@ -376,15 +351,7 @@ h4 {
     gap: 3.2rem;
   }
 
-  .skills-logos ion-icon {
-    font-size: 5rem;
-  }
-
   .logo-vscode {
     height: 4rem;
-  }
-
-  .skills-logos-smaller ion-icon {
-    font-size: 4.4rem;
   }
 }
