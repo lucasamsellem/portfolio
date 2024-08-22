@@ -64,23 +64,19 @@ a {
   gap: 4.8rem;
 }
 
-.nav-items li {
-  background-color: var(--purple);
-  padding: 0.4em 1em;
-  border-radius: 10px;
-
-  transition: all 0.2s;
-}
-
 .nav-items li a {
+  background-color: var(--purple);
+  padding: 0.6em 1em;
+  border-radius: 10px;
   color: white;
+  transition: all 0.2s;
 }
 
 a:active,
 a:visited {
   color: var(--font-color);
 }
-.nav-items li:hover {
+.nav-items li a:hover {
   background-color: #ac91fb;
 }
 
