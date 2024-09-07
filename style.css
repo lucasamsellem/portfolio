@@ -31,7 +31,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.3em 4em;
+  padding: 1.2em 4em;
   font-weight: 700;
   background-color: white;
   text-transform: uppercase;
@@ -61,25 +61,23 @@ a {
 
 .nav-items {
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .nav-items li a {
-  font-size: 1.6rem;
-  color: white;
   background-color: var(--purple);
-  padding: 0.6em 1.2em;
+  padding: 0.6em 1em;
   border-radius: 10px;
-
+  color: white;
   transition: all 0.2s;
-}
-.nav-items li a:hover {
-  background-color: #ac91fb;
 }
 
 a:active,
 a:visited {
   color: var(--font-color);
+}
+.nav-items li a:hover {
+  background-color: #ac91fb;
 }
 
 .side-padding {
@@ -194,7 +192,11 @@ h4 {
 .skills-logos-smaller li {
   display: inline-block;
 }
-.udemy-logo {
+.logo {
+  height: calc(1em + 1vh + 0.5vw);
+}
+.udemy-logo,
+.ep-logo {
   width: 100%;
 }
 .logo-html {
@@ -248,8 +250,22 @@ h4 {
 
 /* PROJETS */
 
+.info-project-icon {
+  opacity: 0.2;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: unset;
+  background: unset;
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
 .projets-container > div {
   display: grid;
+  position: relative;
   align-items: center;
   text-align: center;
   border-radius: 10px;
@@ -283,11 +299,13 @@ h4 {
   transition: all 0.2s;
 }
 
+/* CONTACT */
+
 .contact-container ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.4rem;
+  gap: 4rem;
 }
 
 .contact-section {
@@ -336,7 +354,7 @@ h4 {
   }
   header {
     font-size: 1.6rem;
-    padding: 1.5em 2em;
+    padding: 1em 2em;
     flex-direction: column;
   }
 
