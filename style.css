@@ -261,6 +261,8 @@ h4 {
   align-items: center;
   font-size: 2.4rem;
   cursor: pointer;
+
+  transition: all 0.3s;
 }
 
 .projets-container > div {
@@ -286,6 +288,7 @@ h4 {
 .projets-description {
   font-size: 1.4rem;
   font-style: italic;
+  font-weight: unset;
 }
 
 .projets-thumbnail {
@@ -299,6 +302,24 @@ h4 {
   transition: all 0.2s;
 }
 
+.projets-thumbnail:active {
+  transform: scale(0.97);
+}
+
+.historical-events-project-info {
+  font-size: 1.4rem;
+  position: absolute;
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
+  top: 4rem;
+  right: 1rem;
+  max-width: 25rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  transition: all 0.3s;
+}
+
 /* CONTACT */
 
 .contact-container ul {
@@ -310,6 +331,12 @@ h4 {
 
 .contact-section {
   margin-bottom: 0;
+}
+
+/* DYNAMIC */
+.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Responsive Design */
