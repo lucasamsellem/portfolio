@@ -45,7 +45,6 @@
                 <h1>LUCAS AMSELLEM</h1>
                 <h3>Développeur front-end</h3>
               </div>
-
               <p>
                 Autodicate, j'ai commencé à apprendre le développement web en
                 septembre 2023 en parallèle de mon alternance en tant qu'agent
@@ -54,8 +53,10 @@
               </p>
 
               <p>
-                Je souhaite me spécialiser en tant que développeur React, et
-                ensuite apprendre Next.js
+                Je souhaite me spécialiser en tant que développeur front-end
+                React, puis approfondir mes compétences en apprenant Next.js.
+                Mon objectif est de maîtriser une stack complète avec Tailwind
+                et TypeScript.
               </p>
 
               <p>
@@ -68,7 +69,7 @@
                     >ici</a
                   ></span
                 >
-                pour accéder à mon CV complet
+                pour accéder à mon CV complet.
               </p>
             </div>
 
@@ -244,12 +245,8 @@
           <h2>Projets</h2>
           <div class="grid-3-col projets-container">
             <div>
-              <button class="info-project-icon">
-                <ion-icon name="information-circle-outline"></ion-icon>
-              </button>
-
               <h4>Capital Guesser</h4>
-              <p class="projets-description">Quizz de capitales</p>
+              <h5 class="projets-description">Quizz de capitales</h5>
               <a
                 href="https://lucasamsellem.github.io/capital-guesser/"
                 target="_blank"
@@ -277,14 +274,10 @@
             </div>
 
             <div>
-              <button class="info-project-icon">
-                <ion-icon name="information-circle-outline"></ion-icon>
-              </button>
-
               <h4>Order Taking</h4>
-              <p class="projets-description">
+              <h5 class="projets-description">
                 Simulation de réservation en ligne de fast-food
-              </p>
+              </h5>
 
               <a
                 href="https://lucasamsellem.github.io/order-taking/"
@@ -312,15 +305,23 @@
               </div>
             </div>
 
-            <div>
+            <div class="historical-events-project">
               <button class="info-project-icon">
                 <ion-icon name="information-circle-outline"></ion-icon>
               </button>
+              <div class="historical-events-project-info hidden">
+                Lorsque l'utilisateur saisit un mot-clé dans la barre de
+                recherche lié à un événement, un pays, un monument ou autre fait
+                historique marquant, l'application effectue une requête à l'API
+                (api-ninjas.com) pour récupérer les informations pertinentes et
+                affiche une liste des événements majeurs associés au terme
+                recherché
+              </div>
 
               <h4>Historical Events</h4>
-              <i class="projets-description">
+              <h5 class="projets-description">
                 Moments historiques marquants (avec API)
-              </i>
+              </h5>
 
               <a
                 href="https://lucasamsellem.github.io/historical-events/"
@@ -380,5 +381,6 @@
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
