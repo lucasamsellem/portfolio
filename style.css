@@ -206,7 +206,8 @@ h4 {
 
 .mairie-paris-logo,
 .ep-logo,
-.school-logo {
+.school-logo,
+.udemy-logo {
   width: 100%;
 }
 
@@ -225,7 +226,6 @@ h4 {
 .logo-git {
   color: #f1502f;
 }
-
 .logo-linkedin {
   color: #0a66c2;
   font-size: 6rem;
