@@ -226,14 +226,6 @@ h4 {
 .logo-git {
   color: #f1502f;
 }
-.logo-linkedin {
-  color: #0a66c2;
-  font-size: 6rem;
-}
-.logo-mail {
-  font-size: 7rem;
-  color: var(--purple);
-}
 
 .qualifications-list {
   display: grid;
@@ -335,6 +327,23 @@ h4 {
 
 .contact-section {
   margin-bottom: 0;
+}
+
+.link-github {
+  color: var(--font-color);
+}
+.link-mail {
+  color: var(--purple);
+}
+.link-linkedin {
+  color: #0a66c2;
+}
+.contact-links {
+  font-size: calc(3em + 2vh + 0.5vw);
+  transition: all 0.2s;
+}
+.contact-links:active {
+  transform: scale(0.9);
 }
 
 /* DYNAMIC */
