@@ -121,11 +121,11 @@ h4 {
 }
 
 .grid-2-col {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 }
-.grid-3-col {
-  grid-template-columns: 1fr 1fr 1fr;
-}
+/* .grid-3-col {
+  grid-template-columns: repeat(3, 1fr);
+} */
 
 /* ABOUT */
 
@@ -174,7 +174,7 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1.6rem;
+  gap: 1.4rem;
 }
 
 .skills-logos li {
@@ -225,6 +225,10 @@ h4 {
 }
 .logo-git {
   color: #f1502f;
+}
+.shadcnui-logo {
+  border-radius: 100%;
+  height: calc(0.7em + 1vh + 0.5vw);
 }
 
 .qualifications-list {
@@ -277,7 +281,6 @@ h4 {
 .projets-container > div {
   display: grid;
   position: relative;
-  align-items: center;
   text-align: center;
   border-radius: 10px;
   padding: 1em;

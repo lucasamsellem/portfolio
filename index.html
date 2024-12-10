@@ -73,7 +73,7 @@
 
             <div class="skills-container">
               <div>
-                <h4>Compétences</h4>
+                <h4>Langages et outils</h4>
                 <ul class="skills-logos">
                   <li>HTML <ion-icon name="logo-html5" class="logo-html" /></li>
                   <li>CSS <ion-icon name="logo-css3" class="logo-css" /></li>
@@ -114,6 +114,14 @@
                         d="M23.395 7.081c-.488-.207-1.053-.002-1.29.472-.224.448-.523.723-.914.838-.612.183-1.343-.052-1.685-.253-.451-.265-.974-.667-1.527-1.092C16.214 5.688 14.018 4 11 4 8.586 4 7.346 5.239 5.293 7.293 4.902 7.684 4.899 8.32 5.29 8.71 5.67 9.092 6.28 9.104 6.672 8.74c.01-.009.02-.019.03-.028.552-.426 4.03-.012 5.55 1.196C14.511 11.703 16.142 13 18 13c2.659 0 4.879-1.741 5.94-4.658C24.121 7.844 23.882 7.291 23.395 7.081zM18.395 14.081c-.488-.207-1.053-.002-1.29.472-.224.448-.523.723-.914.838-.612.18-1.343-.052-1.685-.253-.451-.265-.974-.667-1.527-1.092C11.214 12.688 9.018 11 6 11c-2.414 0-3.654 1.239-5.707 3.293-.391.391-.394 1.027-.003 1.417.38.382.991.395 1.383.03.01-.009.02-.019.03-.028.551-.426 4.031-.012 5.55 1.196C9.511 18.703 11.142 20 13 20c2.659 0 4.879-1.741 5.94-4.658C19.121 14.844 18.882 14.291 18.395 14.081z"
                       ></path>
                     </svg>
+                  </li>
+                  <li>
+                    Vite
+                    <img
+                      src="/img/vite-logo.png"
+                      alt="Logo Vite"
+                      class="logo"
+                    />
                   </li>
                   <li>
                     Git <ion-icon name="git-branch-outline" class="logo-git" />
@@ -186,7 +194,7 @@
               </div>
 
               <div>
-                <h4>En apprentissage</h4>
+                <h4>En cours</h4>
                 <ul class="qualifications-list">
                   <li>
                     <img
@@ -210,8 +218,8 @@
                 <div class="hidden popup">
                   En avril 2025, je débuterai une formation en alternance
                   'Développeur full-stack' à l'école 3W Academy, après avoir
-                  complété une remise à niveau de trois mois dès décembre 2024
-                  au sein de la même école
+                  complété une préformation de trois mois dès décembre 2024 au
+                  sein de la même école
                 </div>
 
                 <h4>Formation</h4>
@@ -237,10 +245,11 @@
       <section id="projets">
         <div class="side-padding">
           <h2>Projets</h2>
-          <div class="grid-3-col projets-container">
+          <div class="grid-2-col projets-container">
             <div>
               <h4>Capital Guesser</h4>
               <h5 class="projets-description">Quizz de capitales</h5>
+
               <a
                 href="https://lucasamsellem.github.io/capital-guesser/"
                 target="_blank"
@@ -271,10 +280,11 @@
               <button class="info-icon">
                 <ion-icon name="information-circle-outline" />
               </button>
-              <div class="hidden popup">
-                Lorsque l'utilisateur valide son panier, une API de géocodage
-                inversé récupère sa localisation
-              </div>
+              <p class="hidden popup">
+                Lors de la validation du panier, une API de géocodage inversé
+                récupère la localisation de l'utilisateur pour l'afficher dans
+                la simulation de confirmation de commande
+              </p>
 
               <h4>Order Taking</h4>
               <h5 class="projets-description">
@@ -312,13 +322,12 @@
               <button class="info-icon">
                 <ion-icon name="information-circle-outline" />
               </button>
-              <div class="hidden popup">
+              <p class="hidden popup">
                 Lorsque l'utilisateur saisit un mot-clé dans la barre de
                 recherche lié à un événement historique, l'application effectue
-                une requête à l'API
-                <i>(api-ninjas.com)</i> pour récupérer et afficher les
-                événements majeurs liés au mot-clé saisi
-              </div>
+                une requête à l'API pour récupérer et afficher les événements
+                majeurs liés au mot-clé saisi
+              </p>
 
               <h4>Historical Events</h4>
               <h5 class="projets-description">
@@ -353,6 +362,91 @@
                       d="M23.395 7.081c-.488-.207-1.053-.002-1.29.472-.224.448-.523.723-.914.838-.612.183-1.343-.052-1.685-.253-.451-.265-.974-.667-1.527-1.092C16.214 5.688 14.018 4 11 4 8.586 4 7.346 5.239 5.293 7.293 4.902 7.684 4.899 8.32 5.29 8.71 5.67 9.092 6.28 9.104 6.672 8.74c.01-.009.02-.019.03-.028.552-.426 4.03-.012 5.55 1.196C14.511 11.703 16.142 13 18 13c2.659 0 4.879-1.741 5.94-4.658C24.121 7.844 23.882 7.291 23.395 7.081zM18.395 14.081c-.488-.207-1.053-.002-1.29.472-.224.448-.523.723-.914.838-.612.18-1.343-.052-1.685-.253-.451-.265-.974-.667-1.527-1.092C11.214 12.688 9.018 11 6 11c-2.414 0-3.654 1.239-5.707 3.293-.391.391-.394 1.027-.003 1.417.38.382.991.395 1.383.03.01-.009.02-.019.03-.028.551-.426 4.031-.012 5.55 1.196C9.511 18.703 11.142 20 13 20c2.659 0 4.879-1.741 5.94-4.658C19.121 14.844 18.882 14.291 18.395 14.081z"
                     ></path>
                   </svg>
+                </li>
+              </ul>
+            </div>
+
+            <div class="has-popup">
+              <button class="info-icon">
+                <ion-icon name="information-circle-outline" />
+              </button>
+              <p class="hidden popup">
+                Budget Tracker, mon projet le plus abouti à ce jour, permet de
+                gérer un faux compte bancaire. Il offre la possibilité d'ajouter
+                des fonds, de définir un budget à respecter, de saisir ses
+                dépenses, le tout est accompagné de graphiques interactifs pour
+                analyser les données. Ce projet intègre des fonctionnalités
+                avancées telles que le routing, l’utilisation du Context API et
+                de TypeScript, ainsi que l’intégration de composants externes
+                via Shadcn UI
+              </p>
+
+              <h4>Budget Tracker</h4>
+              <h5 class="projets-description">
+                Réplication d'une application bancaire permettant de suivre ses
+                dépenses
+              </h5>
+
+              <a
+                href="https://lucasamsellem.github.io/budget-tracker/"
+                target="_blank"
+              >
+                <img
+                  src="img/budget-tracker-thumbnail.webp"
+                  alt="Aperçu de l'application d'événements historiques"
+                  class="projets-thumbnail"
+                />
+              </a>
+
+              <ul class="skills-logos-smaller">
+                <li>
+                  <ion-icon name="logo-react" class="logo-react" />
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    class="logo"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#38bdf8"
+                      d="M23.395 7.081c-.488-.207-1.053-.002-1.29.472-.224.448-.523.723-.914.838-.612.183-1.343-.052-1.685-.253-.451-.265-.974-.667-1.527-1.092C16.214 5.688 14.018 4 11 4 8.586 4 7.346 5.239 5.293 7.293 4.902 7.684 4.899 8.32 5.29 8.71 5.67 9.092 6.28 9.104 6.672 8.74c.01-.009.02-.019.03-.028.552-.426 4.03-.012 5.55 1.196C14.511 11.703 16.142 13 18 13c2.659 0 4.879-1.741 5.94-4.658C24.121 7.844 23.882 7.291 23.395 7.081zM18.395 14.081c-.488-.207-1.053-.002-1.29.472-.224.448-.523.723-.914.838-.612.18-1.343-.052-1.685-.253-.451-.265-.974-.667-1.527-1.092C11.214 12.688 9.018 11 6 11c-2.414 0-3.654 1.239-5.707 3.293-.391.391-.394 1.027-.003 1.417.38.382.991.395 1.383.03.01-.009.02-.019.03-.028.551-.426 4.031-.012 5.55 1.196C9.511 18.703 11.142 20 13 20c2.659 0 4.879-1.741 5.94-4.658C19.121 14.844 18.882 14.291 18.395 14.081z"
+                    ></path>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 48 48"
+                    class="logo"
+                  >
+                    <rect
+                      width="36"
+                      height="36"
+                      x="6"
+                      y="6"
+                      fill="#1976d2"
+                    ></rect>
+                    <polygon
+                      fill="#fff"
+                      points="27.49,22 14.227,22 14.227,25.264 18.984,25.264 18.984,40 22.753,40 22.753,25.264 27.49,25.264"
+                    ></polygon>
+                    <path
+                      fill="#fff"
+                      d="M39.194,26.084c0,0-1.787-1.192-3.807-1.192s-2.747,0.96-2.747,1.986 c0,2.648,7.381,2.383,7.381,7.712c0,8.209-11.254,4.568-11.254,4.568V35.22c0,0,2.152,1.622,4.733,1.622s2.483-1.688,2.483-1.92 c0-2.449-7.315-2.449-7.315-7.878c0-7.381,10.658-4.469,10.658-4.469L39.194,26.084z"
+                    ></path>
+                  </svg>
+                </li>
+                <li>
+                  <img
+                    src="/img/shadcnui-logo.png"
+                    alt="Logo Shadcn UI"
+                    class="shadcnui-logo"
+                  />
                 </li>
               </ul>
             </div>
