@@ -280,7 +280,7 @@ h4 {
   transition: all 0.3s;
 }
 
-.projets-container > div {
+.projets-container > li {
   display: grid;
   position: relative;
   text-align: center;
@@ -291,7 +291,7 @@ h4 {
 
   transition: all 0.2s;
 }
-.projets-container > div:hover {
+.projets-container > li:hover {
   transform: translateY(-7px);
 }
 
