@@ -245,17 +245,16 @@
                 </ul>
               </div>
 
-              <div class="education-container has-popup">
-                <button class="info-icon">
+              <div class="education-container">
+                <!-- <button class="info-icon">
                   <ion-icon name="information-circle-outline" />
-                </button>
-
-                <div class="hidden popup">
+                </button> -->
+                <!-- <div class="hidden popup">
                   En avril 2025, je débuterai une formation en alternance
                   'Développeur full-stack' à l'école 3W Academy, après avoir
                   complété une préformation de trois mois dès décembre 2024 au
                   sein de la même école
-                </div>
+                </div> -->
 
                 <h4>Formation</h4>
                 <ul class="qualifications-list">
@@ -277,14 +276,21 @@
         </div>
       </section>
 
-      <section id="projets">
+      <section id="projects">
         <div class="side-padding">
           <h2>Projets</h2>
-          <ul class="grid-2-col projets-container">
+          <ul class="grid-2-col projects-container">
             <li class="has-popup">
-              <button class="info-icon">
-                <ion-icon name="information-circle-outline" />
-              </button>
+              <div class="project-header">
+                <a
+                  href="https://github.com/lucasamsellem/budget-tracker"
+                  target="_blank"
+                  ><ion-icon name="logo-github" class="logo-github-project"
+                /></a>
+                <button class="info-icon">
+                  <ion-icon name="information-circle-outline" />
+                </button>
+              </div>
               <p class="hidden popup">
                 Budget Tracker, mon projet le plus abouti à ce jour, permet
                 d'ajouter des fonds, de définir un budget à respecter, de saisir
@@ -293,13 +299,11 @@
                 routing, le Context API, TypeScript, ainsi que l’intégration de
                 composants externes avec Shadcn UI
               </p>
-
               <h4>Budget Tracker</h4>
-              <h5 class="projets-description">
+              <h5 class="projects-description">
                 Réplication d'une application bancaire permettant de suivre ses
                 dépenses
               </h5>
-
               <a
                 href="https://lucasamsellem.github.io/budget-tracker/"
                 target="_blank"
@@ -307,7 +311,7 @@
                 <img
                   src="img/budget-tracker-thumbnail.webp"
                   alt="Aperçu de l'application d'événements historiques"
-                  class="projets-thumbnail"
+                  class="projects-thumbnail"
                 />
               </a>
 
@@ -365,9 +369,16 @@
             </li>
 
             <li class="has-popup">
-              <button class="info-icon">
-                <ion-icon name="information-circle-outline" />
-              </button>
+              <div class="project-header">
+                <a
+                  href="https://github.com/lucasamsellem/historical-events/"
+                  target="_blank"
+                  ><ion-icon name="logo-github" class="logo-github-project"
+                /></a>
+                <button class="info-icon">
+                  <ion-icon name="information-circle-outline" />
+                </button>
+              </div>
               <p class="hidden popup">
                 Lorsque l'utilisateur saisit un mot-clé dans la barre de
                 recherche lié à un événement historique, l'application effectue
@@ -375,7 +386,7 @@
                 majeurs liés au mot-clé saisi
               </p>
               <h4>Historical Events</h4>
-              <h5 class="projets-description">
+              <h5 class="projects-description">
                 Listes d'événements historiques majeurs (avec API)
               </h5>
               <a
@@ -385,7 +396,7 @@
                 <img
                   src="img/historical-events-thumbnail.webp"
                   alt="Aperçu de l'application d'événements historiques"
-                  class="projets-thumbnail"
+                  class="projects-thumbnail"
                 />
               </a>
               <ul class="skills-logos-smaller">
@@ -410,16 +421,23 @@
             </li>
 
             <li class="has-popup">
-              <button class="info-icon">
-                <ion-icon name="information-circle-outline" />
-              </button>
+              <div class="project-header">
+                <a
+                  href="https://github.com/lucasamsellem/order-taking/"
+                  target="_blank"
+                  ><ion-icon name="logo-github" class="logo-github-project"
+                /></a>
+                <button class="info-icon">
+                  <ion-icon name="information-circle-outline" />
+                </button>
+              </div>
               <p class="hidden popup">
                 Lors de la validation du panier, une API de géocodage inversé
                 récupère la localisation de l'utilisateur pour l'afficher dans
                 la simulation de confirmation de commande
               </p>
               <h4>Order Taking</h4>
-              <h5 class="projets-description">
+              <h5 class="projects-description">
                 Simulation de réservation en ligne de fast-food
                 <i>(avec API)</i>
               </h5>
@@ -430,7 +448,7 @@
                 <img
                   src="img/order-taking-thumbnail.webp"
                   alt="Aperçu d'une simulation de réservation en ligne de fast-food"
-                  class="projets-thumbnail"
+                  class="projects-thumbnail"
                 />
               </a>
               <div>
@@ -448,9 +466,23 @@
               </div>
             </li>
 
-            <li>
+            <li class="has-popup">
+              <div class="project-header">
+                <a
+                  href="https://github.com/lucasamsellem/capital-guesser/"
+                  target="_blank"
+                  ><ion-icon name="logo-github" class="logo-github-project"
+                /></a>
+                <button class="info-icon">
+                  <ion-icon name="information-circle-outline" />
+                </button>
+              </div>
               <h4>Capital Guesser</h4>
-              <h5 class="projets-description">Quizz de capitales</h5>
+              <p class="hidden popup">
+                Jeu avec différents modes de difficulté, un chronomètre, une
+                barre de progression et des indices interactifs
+              </p>
+              <h5 class="projects-description">Quizz de capitales</h5>
               <a
                 href="https://lucasamsellem.github.io/capital-guesser/"
                 target="_blank"
@@ -458,7 +490,7 @@
                 <img
                   src="img/capital-guesser-thumbnail.webp"
                   alt="Aperçu d'un quizz de capitales"
-                  class="projets-thumbnail"
+                  class="projects-thumbnail"
                 />
               </a>
               <div>
@@ -485,7 +517,7 @@
           <div class="contact-container">
             <ul>
               <li>
-                <a href="mailto:lucas.amsellem21@gmail.com">
+                <a href="mailto:lucas.amsellem21@gmail.com" target="_blank">
                   <ion-icon
                     name="mail-outline"
                     class="link-mail contact-links"
@@ -509,6 +541,18 @@
                     name="logo-github"
                     class="link-github contact-links"
                   ></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/Lucas Amsellem - CV - Alternance développeur front-end.pdf"
+                  target="_blank"
+                >
+                  <img
+                    src="img/resume-logo.svg"
+                    alt="Lucas Amsellem resume"
+                    class="cv-icon"
+                  />
                 </a>
               </li>
             </ul>

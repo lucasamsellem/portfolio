@@ -35,7 +35,6 @@ header {
   font-weight: 700;
   background-color: white;
   text-transform: uppercase;
-
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -58,6 +57,10 @@ ul {
 a {
   text-decoration: none;
 }
+a:active,
+a:visited {
+  color: var(--font-color);
+}
 
 .nav-items {
   display: flex;
@@ -72,10 +75,6 @@ a {
   transition: all 0.2s;
 }
 
-a:active,
-a:visited {
-  color: var(--font-color);
-}
 .nav-items li a:hover {
   background-color: #ac91fb;
 }
@@ -145,12 +144,7 @@ h4 {
   color: var(--grey-text);
 }
 
-.cv-link {
-  text-decoration: underline;
-}
-
 /* SKILLS */
-
 .skills-container {
   position: relative;
   display: grid;
@@ -196,7 +190,6 @@ h4 {
 }
 
 /* LOGO */
-
 .skills-logos-smaller li {
   display: inline-block;
 }
@@ -265,11 +258,27 @@ h4 {
   top: 0.8rem;
 }
 
-/* PROJETS */
+/* PROJECTS */
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-github-project {
+  display: flex;
+  margin-left: -1rem;
+  transition: all 0.3s;
+}
+.logo-github-project:active {
+  transform: scale(0.9);
+}
+
 .info-icon {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  /* position: absolute; */
+  /* top: 1rem; */
+  margin-right: -1rem;
   font-size: 2.4rem;
   opacity: 0.2;
   border: unset;
@@ -280,43 +289,40 @@ h4 {
   transition: all 0.3s;
 }
 
-.projets-container > li {
+.projects-container > li {
   display: grid;
-  position: relative;
   text-align: center;
   border-radius: 10px;
-  padding: 1em;
+  padding: 0.5em 1em 1em 1em;
   background-color: var(--grey-background);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.068);
-
   transition: all 0.2s;
 }
-.projets-container > li:hover {
+.projects-container > li:hover {
   transform: translateY(-7px);
 }
 
-.projets-container h4 {
+.projects-container h4 {
   margin-bottom: 0.6rem;
 }
 
-.projets-description {
+.projects-description {
   font-size: 1.4rem;
   font-style: italic;
   font-weight: unset;
 }
 
-.projets-thumbnail {
+.projects-thumbnail {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.056);
   cursor: pointer;
   text-align: center;
   margin: 4.2rem 0;
-
   transition: all 0.2s;
 }
 
-.projets-thumbnail:active {
+.projects-thumbnail:active {
   transform: scale(0.97);
 }
 
@@ -341,6 +347,10 @@ h4 {
 }
 .link-linkedin {
   color: #0a66c2;
+}
+.cv-icon {
+  height: calc(3em + 2vh + 0.5vw);
+  display: flex;
 }
 .contact-links {
   font-size: calc(3em + 2vh + 0.5vw);
@@ -397,7 +407,7 @@ h4 {
     gap: 3.2rem;
   }
 
-  .projets-thumbnail {
+  .projects-thumbnail {
     width: 90%;
   }
 
