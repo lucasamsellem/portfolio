@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,6 @@
     />
     <meta name="author" content="Lucas Amsellem" />
     <title>Lucas Amsellem | Développeur front-end</title>
-
     <link rel="icon" type="image/x-icon" href="img/code.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -33,10 +31,10 @@
 
   <body>
     <header>
-      <span class="name-header">LUCAS AMSELLEM</span>
+      <p>LUCAS AMSELLEM</p>
       <nav>
-        <ul class="nav-items">
-          <li><a href="#accueil">Accueil</a></li>
+        <ul class="nav-links">
+          <li><a href="#home">Accueil</a></li>
           <li><a href="#projects">Projets</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -44,11 +42,11 @@
     </header>
 
     <main>
-      <section id="accueil">
+      <section id="home">
         <div class="side-padding">
           <h2>Accueil</h2>
           <div class="grid-2-col">
-            <article class="about-container">
+            <article>
               <div>
                 <h1>LUCAS AMSELLEM</h1>
                 <h3>Développeur front-end</h3>
@@ -70,19 +68,17 @@
               </p>
             </article>
 
-            <div class="skills-container">
-              <div>
+            <div class="assets-container">
+              <section>
                 <h4>Langages et outils</h4>
-                <ul class="skills-logos">
-                  <li>HTML <ion-icon name="logo-html5" class="logo-html" /></li>
-                  <li>CSS <ion-icon name="logo-css3" class="logo-css" /></li>
+                <ul class="tools-list">
+                  <li>HTML <ion-icon name="logo-html5" /></li>
+                  <li>CSS <ion-icon name="logo-css3" /></li>
                   <li>
                     JavaScript
-                    <ion-icon name="logo-javascript" class="logo-js" />
+                    <ion-icon name="logo-javascript" />
                   </li>
-                  <li>
-                    React <ion-icon name="logo-react" class="logo-react" />
-                  </li>
+                  <li>React <ion-icon name="logo-react" /></li>
                   <li>
                     TypeScript
                     <svg
@@ -158,32 +154,27 @@
                       />
                     </svg>
                   </li>
-                  <li>
-                    Git <ion-icon name="git-branch-outline" class="logo-git" />
-                  </li>
+                  <li>Git <ion-icon name="git-branch-outline" /></li>
                   <li>Github <ion-icon name="logo-github" /></li>
                 </ul>
-              </div>
+              </section>
 
-              <div>
+              <section>
                 <h4>Certifications</h4>
                 <ul class="qualifications-list">
                   <li>
                     <img
                       src="img/udemy-logo.svg"
                       alt="Logo Udemy"
-                      class="logo udemy-logo"
+                      class="logo"
                     />
                     <p>
                       Build Responsive Real-World Websites with HTML and CSS
                       <br />
-                      <span
-                        ><a
-                          class="certificate"
-                          href="https://www.udemy.com/certificate/UC-5b6878ee-91eb-40e7-8dd9-d6a55bd66243/"
-                          target="_blank"
-                          >Certificat</a
-                        ></span
+                      <a
+                        href="https://www.udemy.com/certificate/UC-5b6878ee-91eb-40e7-8dd9-d6a55bd66243/"
+                        target="_blank"
+                        >Certificat</a
                       >
                     </p>
                   </li>
@@ -191,44 +182,34 @@
                     <img
                       src="img/udemy-logo.svg"
                       alt="Logo Udemy"
-                      class="logo udemy-logo"
+                      class="logo"
                     />
                     <p>
                       The Complete JavaScript Course 2024: From Zero to Expert!
                       <br />
-                      <span
-                        ><a
-                          class="certificate"
-                          href="https://www.udemy.com/certificate/UC-99e42cc5-9044-443a-897b-9ac9d41802b5/"
-                          target="_blank"
-                          >Certificat</a
-                        ></span
+                      <a
+                        href="https://www.udemy.com/certificate/UC-99e42cc5-9044-443a-897b-9ac9d41802b5/"
+                        target="_blank"
+                        >Certificat</a
                       >
                     </p>
                   </li>
                   <li>
-                    <img
-                      src="img/paris-logo.png"
-                      alt="Logo Mairie de Paris"
-                      class="mairie-paris-logo"
-                    />
+                    <img src="img/paris-logo.png" alt="Logo Mairie de Paris" />
                     <p>
-                      Initiation à la programmation avec JavaScript et JQuery
+                      Initiation à la programmation avec JavaScript
                       <br />
-                      <span
-                        ><a
-                          class="certificate"
-                          href="P5-PR1-W3 Attestation d'assiduité_AMSELLEM Lucas.pdf"
-                          target="_blank"
-                          >Certificat</a
-                        ></span
+                      <a
+                        href="P5-PR1-W3 Attestation d'assiduité_AMSELLEM Lucas.pdf"
+                        target="_blank"
+                        >Certificat</a
                       >
                     </p>
                   </li>
                 </ul>
-              </div>
+              </section>
 
-              <div>
+              <section>
                 <h4>En cours</h4>
                 <ul class="qualifications-list">
                   <li>
@@ -243,26 +224,15 @@
                     </p>
                   </li>
                 </ul>
-              </div>
+              </section>
 
-              <div class="education-container">
-                <!-- <button class="info-icon">
-                  <ion-icon name="information-circle-outline" />
-                </button> -->
-                <!-- <div class="hidden popup">
-                  En avril 2025, je débuterai une formation en alternance
-                  'Développeur full-stack' à l'école 3W Academy, après avoir
-                  complété une préformation de trois mois dès décembre 2024 au
-                  sein de la même école
-                </div> -->
-
+              <section class="education-list">
                 <h4>Formation</h4>
                 <ul class="qualifications-list">
                   <li>
                     <img
                       src="img/3w-logo.jpg"
                       alt="Logo école web 3W Academy"
-                      class="school-logo"
                     />
                     <p>
                       Développeur full-stack
@@ -270,7 +240,7 @@
                     </p>
                   </li>
                 </ul>
-              </div>
+              </section>
             </div>
           </div>
         </div>
@@ -279,14 +249,13 @@
       <section id="projects">
         <div class="side-padding">
           <h2>Projets</h2>
-          <ul class="grid-2-col projects-container">
+          <ul class="grid-2-col projects-list">
             <li class="has-popup">
               <div class="project-header">
                 <a
                   href="https://github.com/lucasamsellem/budget-tracker"
                   target="_blank"
-                  class="link-github"
-                  ><ion-icon name="logo-github" class="logo-github-project"
+                  ><ion-icon name="logo-github"
                 /></a>
                 <button class="info-icon">
                   <ion-icon name="information-circle-outline" />
@@ -300,8 +269,9 @@
                 routing, le Context API, TypeScript, ainsi que l’intégration de
                 composants externes avec Shadcn UI
               </p>
+
               <h4>Budget Tracker</h4>
-              <h5 class="projects-description">
+              <h5>
                 Réplication d'une application bancaire permettant de suivre ses
                 dépenses
               </h5>
@@ -316,9 +286,9 @@
                 />
               </a>
 
-              <ul class="skills-logos-smaller">
+              <ul class="tools-list-smaller">
                 <li>
-                  <ion-icon name="logo-react" class="logo-react" />
+                  <ion-icon name="logo-react" />
                 </li>
                 <li>
                   <svg
@@ -374,8 +344,7 @@
                 <a
                   href="https://github.com/lucasamsellem/historical-events/"
                   target="_blank"
-                  class="link-github"
-                  ><ion-icon name="logo-github" class="logo-github-project"
+                  ><ion-icon name="logo-github"
                 /></a>
                 <button class="info-icon">
                   <ion-icon name="information-circle-outline" />
@@ -387,10 +356,9 @@
                 une requête à l'API pour récupérer et afficher les événements
                 majeurs liés au mot-clé saisi
               </p>
+
               <h4>Historical Events</h4>
-              <h5 class="projects-description">
-                Listes d'événements historiques majeurs (avec API)
-              </h5>
+              <h5>Listes d'événements historiques majeurs (avec API)</h5>
               <a
                 href="https://lucasamsellem.github.io/historical-events/"
                 target="_blank"
@@ -401,9 +369,9 @@
                   class="projects-thumbnail"
                 />
               </a>
-              <ul class="skills-logos-smaller">
+              <ul class="tools-list-smaller">
                 <li>
-                  <ion-icon name="logo-react" class="logo-react" />
+                  <ion-icon name="logo-react" />
                 </li>
                 <li>
                   <svg
@@ -427,8 +395,7 @@
                 <a
                   href="https://github.com/lucasamsellem/order-taking/"
                   target="_blank"
-                  class="link-github"
-                  ><ion-icon name="logo-github" class="logo-github-project"
+                  ><ion-icon name="logo-github"
                 /></a>
                 <button class="info-icon">
                   <ion-icon name="information-circle-outline" />
@@ -439,8 +406,9 @@
                 récupère la localisation de l'utilisateur pour l'afficher dans
                 la simulation de confirmation de commande
               </p>
+
               <h4>Order Taking</h4>
-              <h5 class="projects-description">
+              <h5>
                 Simulation de réservation en ligne de fast-food
                 <i>(avec API)</i>
               </h5>
@@ -455,15 +423,15 @@
                 />
               </a>
               <div>
-                <ul class="skills-logos-smaller">
+                <ul class="tools-list-smaller">
                   <li>
-                    <ion-icon name="logo-html5" class="logo-html" />
+                    <ion-icon name="logo-html5" />
                   </li>
                   <li>
-                    <ion-icon name="logo-css3" class="logo-css" />
+                    <ion-icon name="logo-css3" />
                   </li>
                   <li>
-                    <ion-icon name="logo-javascript" class="logo-js" />
+                    <ion-icon name="logo-javascript" />
                   </li>
                 </ul>
               </div>
@@ -474,19 +442,19 @@
                 <a
                   href="https://github.com/lucasamsellem/capital-guesser/"
                   target="_blank"
-                  class="link-github"
-                  ><ion-icon name="logo-github" class="logo-github-project"
+                  ><ion-icon name="logo-github"
                 /></a>
                 <button class="info-icon">
                   <ion-icon name="information-circle-outline" />
                 </button>
               </div>
+
               <h4>Capital Guesser</h4>
               <p class="hidden popup">
                 Jeu avec différents modes de difficulté, un chronomètre, une
                 barre de progression et des indices interactifs
               </p>
-              <h5 class="projects-description">Quizz de capitales</h5>
+              <h5>Quizz de capitales</h5>
               <a
                 href="https://lucasamsellem.github.io/capital-guesser/"
                 target="_blank"
@@ -498,15 +466,15 @@
                 />
               </a>
               <div>
-                <ul class="skills-logos-smaller">
+                <ul class="tools-list-smaller">
                   <li>
-                    <ion-icon name="logo-html5" class="logo-html" />
+                    <ion-icon name="logo-html5" />
                   </li>
                   <li>
-                    <ion-icon name="logo-css3" class="logo-css" />
+                    <ion-icon name="logo-css3" />
                   </li>
                   <li>
-                    <ion-icon name="logo-javascript" class="logo-js" />
+                    <ion-icon name="logo-javascript" />
                   </li>
                 </ul>
               </div>
@@ -518,49 +486,63 @@
       <section id="contact" class="contact-section">
         <div class="side-padding">
           <h2>Contact</h2>
-          <div class="contact-container">
-            <ul>
-              <li>
-                <a href="mailto:lucas.amsellem21@gmail.com" target="_blank">
-                  <ion-icon
-                    name="mail-outline"
-                    class="link-mail contact-links"
-                  ></ion-icon>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://fr.linkedin.com/in/lucas-amsellem-7894442b0?original_referer="
-                  target="_blank"
-                >
-                  <ion-icon
-                    name="logo-linkedin"
-                    class="link-linkedin contact-links"
-                  ></ion-icon>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/lucasamsellem" target="_blank">
-                  <ion-icon
-                    name="logo-github"
-                    class="link-github contact-links"
-                  ></ion-icon>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="Lucas Amsellem - CV - Alternance développeur front-end.pdf"
-                  target="_blank"
-                >
-                  <img
-                    src="img/resume-logo.svg"
-                    alt="Lucas Amsellem resume"
-                    class="cv-icon"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <form
+            class="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="3d7474fe-6270-4c6d-b9a0-a7162f955c8d"
+            />
+
+            <input
+              class="feedback-input"
+              type="text"
+              name="name"
+              placeholder="Nom"
+              required
+            />
+            <input
+              class="feedback-input"
+              name="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              class="feedback-input"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit">Envoyer</button>
+          </form>
+
+          <ul class="contact-links">
+            <li>
+              <a
+                href="https://fr.linkedin.com/in/lucas-amsellem-7894442b0?original_referer="
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin" />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/lucasamsellem" target="_blank">
+                <ion-icon name="logo-github" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="Lucas Amsellem - CV - Alternance développeur front-end.pdf"
+                target="_blank"
+              >
+                <img src="img/resume-logo.svg" alt="CV de Lucas Amsellem" />
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

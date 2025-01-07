@@ -10,6 +10,7 @@ FONT SIZE SYSTEM (px)
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -21,7 +22,6 @@ FONT SIZE SYSTEM (px)
 
 html {
   font-size: 62.5%;
-  font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
 }
@@ -42,18 +42,18 @@ header {
 }
 
 section {
-  scroll-margin-top: 7.5rem;
+  scroll-margin-top: 7rem;
   margin: 8rem 0;
 }
 
 body {
-  /* background-color: var(--grey-background); */
   color: var(--font-color);
 }
 
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -62,12 +62,12 @@ a:visited {
   color: var(--font-color);
 }
 
-.nav-items {
+.nav-links {
   display: flex;
   gap: 4.8rem;
 }
 
-.nav-items li a {
+.nav-links li a {
   background-color: var(--purple);
   padding: 0.6em 1em;
   border-radius: 10px;
@@ -75,7 +75,7 @@ a:visited {
   transition: all 0.2s;
 }
 
-.nav-items li a:hover {
+.nav-links li a:hover {
   background-color: #ac91fb;
 }
 
@@ -85,7 +85,7 @@ a:visited {
   padding: 3rem;
 }
 
-#accueil,
+#home,
 #contact {
   background-color: var(--grey-background);
 }
@@ -111,41 +111,33 @@ h4 {
   letter-spacing: 1px;
 }
 
-.grid-2-col,
-.grid-3-col {
+.grid-2-col {
+  grid-template-columns: repeat(2, 1fr);
   font-size: 2.5rem;
   display: grid;
   gap: 4.8rem;
   justify-items: center;
 }
 
-.grid-2-col {
-  grid-template-columns: repeat(2, 1fr);
-}
-/* .grid-3-col {
-  grid-template-columns: repeat(3, 1fr);
-} */
-
 /* ABOUT */
-
-.about-container {
+article {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
 
-.about-container h3 {
+article h3 {
   font-size: 2rem;
   font-weight: 700;
 }
 
-.about-container p {
+article p {
   font-size: 1.6rem;
   color: var(--grey-text);
 }
 
 /* SKILLS */
-.skills-container {
+.assets-container {
   position: relative;
   display: grid;
   gap: 6.4rem;
@@ -155,15 +147,12 @@ h4 {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.068);
 }
 
-.skills-arrow {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  cursor: pointer;
+.assets-container section {
+  margin: unset;
 }
 
-.skills-logos,
-.skills-logos-smaller {
+.tools-list,
+.tools-list-smaller {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,7 +160,7 @@ h4 {
   gap: 1.4rem;
 }
 
-.skills-logos li {
+.tools-list li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,40 +173,46 @@ h4 {
   font-weight: 600;
 }
 
-.skills-logos li ion-icon,
-.skills-logos-smaller ion-icon {
+.tools-list li ion-icon,
+.tools-list-smaller ion-icon {
   font-size: calc(1em + 1vh + 0.5vw);
 }
 
-/* LOGO */
-.skills-logos-smaller li {
+.tools-list-smaller li {
   display: inline-block;
 }
+
+/* LOGO */
 .logo {
   height: calc(1em + 1vh + 0.5vw);
 }
 
-.mairie-paris-logo,
-.ep-logo,
-.school-logo,
-.udemy-logo {
+img[alt='Logo Mairie de Paris'],
+img[alt='Logo école web 3W Academy'],
+img[alt='Logo Udemy'] {
   width: 100%;
 }
 
-.logo-html {
+ion-icon[name='logo-html5'] {
   color: #e44d26;
 }
-.logo-css {
+ion-icon[name='logo-css3'] {
   color: #2965f1;
 }
-.logo-js {
+ion-icon[name='logo-javascript'] {
   color: #f0db4f;
 }
-.logo-react {
+ion-icon[name='logo-react'] {
   color: #61dbfb;
 }
-.logo-git {
+ion-icon[name='git-branch-outline'] {
   color: #f1502f;
+}
+ion-icon[name='logo-github'] {
+  color: var(--font-color);
+}
+ion-icon[name='logo-linkedin'] {
+  color: #0a66c2;
 }
 .shadcnui-logo {
   border-radius: 100%;
@@ -239,45 +234,34 @@ h4 {
   font-size: 1.6rem;
 }
 
-.certificate {
+.qualifications-list a {
   text-decoration: underline;
   color: var(--grey-text) !important;
   font-size: 1.4rem;
-
   transition: all 0.2s;
 }
-.certificate:hover {
+.qualifications-list a:hover {
   color: rgb(192, 192, 192) !important;
 }
 
-.education-container {
-  position: relative;
-}
-
-.education-container button {
-  top: 0.8rem;
-}
-
 /* PROJECTS */
-
 .project-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.logo-github-project {
+.project-header ion-icon[name='logo-github'] {
   display: flex;
   margin-left: -1rem;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
-.logo-github-project:active {
+
+.project-header ion-icon[name='logo-github']:active {
   transform: scale(0.9);
 }
 
 .info-icon {
-  /* position: absolute; */
-  /* top: 1rem; */
   margin-right: -1rem;
   font-size: 2.4rem;
   opacity: 0.2;
@@ -289,7 +273,7 @@ h4 {
   transition: all 0.3s;
 }
 
-.projects-container > li {
+.projects-list > li {
   display: grid;
   text-align: center;
   border-radius: 10px;
@@ -298,15 +282,15 @@ h4 {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.068);
   transition: all 0.2s;
 }
-.projects-container > li:hover {
+.projects-list > li:hover {
   transform: translateY(-7px);
 }
 
-.projects-container h4 {
+.projects-list h4 {
   margin-bottom: 0.6rem;
 }
 
-.projects-description {
+.projects-list h5 {
   font-size: 1.4rem;
   font-style: italic;
   font-weight: unset;
@@ -327,8 +311,49 @@ h4 {
 }
 
 /* CONTACT */
+.contact-form {
+  max-width: 50%;
+  margin-inline: auto;
+  margin-bottom: 10rem;
+}
+.feedback-input {
+  font-weight: 400;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid var(--purple);
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  outline: 0;
+  transition: all 0.2s;
+}
+.feedback-input:focus {
+  border: 2px solid #6e46e9;
+}
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+.contact-form button {
+  width: 100%;
+  background: var(--purple);
+  border-radius: 10px;
+  border: unset;
+  color: white;
+  font-size: 24px;
+  padding: 10px 0 10px 0;
+  margin-top: -4px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.contact-form button:hover {
+  background: #ac91fb;
+}
 
-.contact-container ul {
+.contact-links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,24 +364,18 @@ h4 {
   margin-bottom: 0;
 }
 
-.link-github {
-  color: var(--font-color);
-}
-.link-mail {
-  color: var(--purple);
-}
-.link-linkedin {
-  color: #0a66c2;
-}
-.cv-icon {
-  height: calc(3em + 2vh + 0.5vw);
-  display: flex;
-}
-.contact-links {
+.contact-links ion-icon {
   font-size: calc(3em + 2vh + 0.5vw);
   transition: all 0.2s;
 }
-.contact-links:active {
+
+.contact-links img[alt='CV de Lucas Amsellem'] {
+  height: calc(3em + 2vh + 0.5vw);
+  transition: all 0.2s;
+}
+
+.contact-links ion-icon:active,
+.contact-links img[alt='CV de Lucas Amsellem']:active {
   transform: scale(0.9);
 }
 
@@ -388,7 +407,7 @@ h4 {
     padding: 1em 2em;
   }
 
-  .nav-items {
+  .nav-links {
     gap: 2.4rem;
   }
 
@@ -414,6 +433,9 @@ h4 {
   .mail {
     font-size: 1.6rem;
   }
+  .contact-form {
+    max-width: 75%;
+  }
 }
 
 /* PHONE */
@@ -427,11 +449,11 @@ h4 {
     flex-direction: column;
   }
 
-  .name-header {
+  header > p {
     display: none;
   }
 
-  .nav-items {
+  .nav-links {
     gap: 2.4rem;
   }
 
