@@ -58,13 +58,12 @@
                 de deux ans a consolidé mes compétences en travail d'équipe,
                 communication et organisation.
               </p>
-
               <p>
-                Je souhaite me spécialiser dans le développement front-end avec
-                React pour implémenter et améliorer les fonctionnalités des
-                interfaces utilisateur. Mon objectif est de consolider mes
-                compétences avec Next.js pour maîtriser une stack complète avec
-                Tailwind et TypeScript.
+                Je souhaite me spécialiser dans le développement front-end pour
+                implémenter et améliorer les fonctionnalités des interfaces
+                utilisateur. Mon objectif est de consolider mes compétences avec
+                Next.js pour maîtriser une stack complète avec Tailwind et
+                TypeScript.
               </p>
             </article>
 
@@ -79,6 +78,14 @@
                     <ion-icon name="logo-javascript" />
                   </li>
                   <li>React <ion-icon name="logo-react" /></li>
+                  <li>
+                    Next.js
+                    <img
+                      src="img/nextjs-icon.svg"
+                      alt="Logo du framework React Next.js"
+                      class="logo"
+                    />
+                  </li>
                   <li>
                     TypeScript
                     <svg
@@ -229,15 +236,25 @@
               <section class="education-list">
                 <h4>Formation</h4>
                 <ul class="qualifications-list">
-                  <li>
+                  <li class="has-popup school">
                     <img
                       src="img/3w-logo.jpg"
                       alt="Logo école web 3W Academy"
                     />
                     <p>
                       Développeur full-stack
-                      <i>(3W Academy - 2025)</i>
+                      <i>(3W Academy)</i>
                     </p>
+                    <div>
+                      <button class="info-icon">
+                        <ion-icon name="information-circle-outline" />
+                      </button>
+                      <p class="hidden popup">
+                        Formation en contrat d'apprentissage d'un an, précédée
+                        d'une pré-formation intensive de 3 mois en JavaScript et
+                        PHP
+                      </p>
+                    </div>
                   </li>
                 </ul>
               </section>
@@ -260,15 +277,15 @@
                 <button class="info-icon">
                   <ion-icon name="information-circle-outline" />
                 </button>
+                <p class="hidden popup">
+                  Budget Tracker, mon projet le plus abouti à ce jour, permet
+                  d'ajouter des fonds, de définir un budget à respecter, de
+                  saisir ses dépenses, le tout accompagné de graphiques
+                  interactifs. Ce projet intègre des fonctionnalités plus
+                  avancées telles que du routing, le Context API, TypeScript,
+                  ainsi que l’intégration de composants externes avec Shadcn UI
+                </p>
               </div>
-              <p class="hidden popup">
-                Budget Tracker, mon projet le plus abouti à ce jour, permet
-                d'ajouter des fonds, de définir un budget à respecter, de saisir
-                ses dépenses, le tout accompagné de graphiques interactifs. Ce
-                projet intègre des fonctionnalités plus avancées telles que du
-                routing, le Context API, TypeScript, ainsi que l’intégration de
-                composants externes avec Shadcn UI
-              </p>
 
               <h4>Budget Tracker</h4>
               <h5>
@@ -349,13 +366,13 @@
                 <button class="info-icon">
                   <ion-icon name="information-circle-outline" />
                 </button>
+                <p class="hidden popup">
+                  Lorsque l'utilisateur saisit un mot-clé dans la barre de
+                  recherche lié à un événement historique, l'application
+                  effectue une requête à l'API pour récupérer et afficher les
+                  événements majeurs liés au mot-clé saisi
+                </p>
               </div>
-              <p class="hidden popup">
-                Lorsque l'utilisateur saisit un mot-clé dans la barre de
-                recherche lié à un événement historique, l'application effectue
-                une requête à l'API pour récupérer et afficher les événements
-                majeurs liés au mot-clé saisi
-              </p>
 
               <h4>Historical Events</h4>
               <h5>Listes d'événements historiques majeurs (avec API)</h5>
@@ -400,12 +417,12 @@
                 <button class="info-icon">
                   <ion-icon name="information-circle-outline" />
                 </button>
+                <p class="hidden popup">
+                  Lors de la validation du panier, une API de géocodage inversé
+                  récupère la localisation de l'utilisateur pour l'afficher dans
+                  la simulation de confirmation de commande
+                </p>
               </div>
-              <p class="hidden popup">
-                Lors de la validation du panier, une API de géocodage inversé
-                récupère la localisation de l'utilisateur pour l'afficher dans
-                la simulation de confirmation de commande
-              </p>
 
               <h4>Order Taking</h4>
               <h5>
@@ -447,13 +464,13 @@
                 <button class="info-icon">
                   <ion-icon name="information-circle-outline" />
                 </button>
+                <p class="hidden popup">
+                  Jeu avec différents modes de difficulté, un chronomètre, une
+                  barre de progression et des indices interactifs
+                </p>
               </div>
 
               <h4>Capital Guesser</h4>
-              <p class="hidden popup">
-                Jeu avec différents modes de difficulté, un chronomètre, une
-                barre de progression et des indices interactifs
-              </p>
               <h5>Quizz de capitales</h5>
               <a
                 href="https://lucasamsellem.github.io/capital-guesser/"
