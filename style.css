@@ -34,7 +34,6 @@ header {
   padding: 1.2em 4em;
   font-weight: 700;
   background-color: white;
-  text-transform: uppercase;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -64,19 +63,37 @@ a:visited {
 
 .nav-links {
   display: flex;
-  gap: 4.8rem;
+  align-items: center;
+  gap: 3.2rem;
 }
 
 .nav-links li a {
   background-color: var(--purple);
   padding: 0.6em 1em;
   border-radius: 10px;
+  text-transform: uppercase;
   color: white;
   transition: all 0.2s;
 }
 
 .nav-links li a:hover {
   background-color: #ac91fb;
+}
+
+.nav-links li a[href='#contact'] {
+  margin-right: 2.4rem;
+}
+
+.language-flag {
+  display: flex;
+  font-size: 3rem;
+  background: unset !important;
+  padding: unset !important;
+  transition: all 0.2s;
+}
+
+.language:active {
+  transform: scale(0.9);
 }
 
 .side-padding {
@@ -172,13 +189,13 @@ article p {
   font-weight: 600;
 }
 
-.tools-list li ion-icon,
-.tools-list-smaller ion-icon {
-  font-size: calc(1em + 1vh + 0.5vw);
+.tools-list-smaller li {
+  display: flex;
 }
 
-.tools-list-smaller li {
-  display: inline-block;
+.tools-list ion-icon,
+.tools-list-smaller ion-icon {
+  font-size: calc(1em + 1vh + 0.5vw);
 }
 
 /* LOGO */
@@ -283,7 +300,7 @@ ion-icon[name='logo-linkedin'] {
   display: grid;
   text-align: center;
   border-radius: 10px;
-  padding: 0.5em 1em 0.5em 1em;
+  padding: 0.5em 1em;
   background-color: var(--grey-background);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.068);
   transition: all 0.2s;
@@ -389,6 +406,33 @@ textarea {
 .hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  font-size: 1.2rem;
+  width: fit-content;
+  text-wrap: nowrap;
+  background-color: var(--font-color);
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.3em 1em;
+  z-index: 999;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 500;
+  transition: all 0.4s;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 100;
 }
 
 .popup {
