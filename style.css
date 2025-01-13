@@ -21,6 +21,7 @@ FONT SIZE SYSTEM (px)
   --light-shadow: 0 0 3px rgba(0, 0, 0, 0.068);
   --tools-logo-size: calc(1em + 1vh + 0.5vw);
   --social-links-size: calc(1em + 1vh + 0.5vw);
+  --github-logo: ;
 }
 
 html {
@@ -214,7 +215,9 @@ img[alt='Logo école web 3W Academy'],
 img[alt='Logo Udemy'] {
   width: 100%;
 }
-
+ion-icon[name='logo-html5'] {
+  color: #e44d26;
+}
 ion-icon[name='logo-html5'] {
   color: #e44d26;
 }
@@ -343,15 +346,17 @@ ion-icon[name='logo-linkedin'] {
 /* RECOMMENDATION */
 .recommendations-list {
   display: flex;
-  justify-content: center;
   position: relative;
+  max-width: 75%;
+  margin: 0 auto;
 }
-.recommendation-img {
+
+.recommendations-list li img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.068);
 }
-.logo-linkedin-recommendation {
+.recommendations-list li ion-icon[name='logo-linkedin'] {
   position: absolute;
   font-size: var(--tools-logo-size);
   top: 1rem;
@@ -500,12 +505,12 @@ textarea {
     gap: 3.2rem;
   }
 
-  .projects-thumbnail {
+  /* .projects-thumbnail {
     width: 90%;
-  }
+  } */
 
-  .mail {
-    font-size: 1.6rem;
+  .recommendations-list {
+    max-width: 100%;
   }
   .contact-form {
     max-width: 75%;
