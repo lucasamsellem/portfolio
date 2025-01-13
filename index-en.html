@@ -31,8 +31,12 @@
     <!-- REDIRECTING TO VERCEL -->
     <title>Redirecting...</title>
     <script>
-      window.location.href =
+      const vercelURL =
         'https://lucas-amsellem-portfolio.vercel.app/index-en.html';
+
+      if (window.location.href !== vercelURL) {
+        window.location.href = vercelURL;
+      }
     </script>
   </head>
 
