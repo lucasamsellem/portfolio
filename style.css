@@ -150,7 +150,7 @@ article h3 {
 
 article p {
   font-size: 1.6rem;
-  color: var(--grey-text);
+  color: var(--font-color);
 }
 
 /* SKILLS */
