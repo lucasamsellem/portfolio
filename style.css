@@ -18,6 +18,8 @@ FONT SIZE SYSTEM (px)
   --grey-text: #999999;
   --grey-background: #f8f9fa;
   --purple: #9775fa;
+  --tools-logo-size: calc(1em + 1vh + 0.5vw);
+  --social-links-size: calc(1em + 1vh + 0.5vw);
 }
 
 html {
@@ -195,12 +197,15 @@ article p {
 
 .tools-list ion-icon,
 .tools-list-smaller ion-icon {
-  font-size: calc(1em + 1vh + 0.5vw);
+  font-size: var(--tools-logo-size);
 }
 
 /* LOGO */
 .logo {
-  height: calc(1em + 1vh + 0.5vw);
+  height: var(--tools-logo-size);
+}
+.logo-typescript {
+  border-radius: 10px;
 }
 
 img[alt='Logo Mairie de Paris'],
@@ -217,6 +222,7 @@ ion-icon[name='logo-css3'] {
 }
 ion-icon[name='logo-javascript'] {
   color: #f0db4f;
+  border-radius: 8px;
 }
 ion-icon[name='logo-react'] {
   color: #61dbfb;
@@ -334,10 +340,12 @@ ion-icon[name='logo-linkedin'] {
 }
 
 /* CONTACT */
+.contact-section {
+  margin-bottom: 0;
+}
 .contact-form {
   max-width: 50%;
   margin-inline: auto;
-  margin-bottom: 10rem;
 }
 .feedback-input {
   font-weight: 400;
@@ -378,28 +386,26 @@ textarea {
 
 .contact-links {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 0.8rem;
 }
-
-.contact-section {
-  margin-bottom: 0;
+.contact-links li {
+  border-radius: 10px;
+  transition: all 0.2s;
 }
-
+.contact-links li:hover {
+  background-color: #dfe0e1;
+}
+.contact-links a > * {
+  display: flex;
+  padding: 1rem;
+}
 .contact-links ion-icon {
-  font-size: calc(3em + 2vh + 0.5vw);
-  transition: all 0.2s;
+  font-size: var(--social-links-size);
 }
-
 .contact-links img[alt='CV de Lucas Amsellem'] {
-  height: calc(3em + 2vh + 0.5vw);
-  transition: all 0.2s;
-}
-
-.contact-links ion-icon:active,
-.contact-links img[alt='CV de Lucas Amsellem']:active {
-  transform: scale(0.9);
+  height: var(--social-links-size);
+  box-sizing: unset;
 }
 
 /* DYNAMIC */
