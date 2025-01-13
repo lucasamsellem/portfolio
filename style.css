@@ -18,6 +18,7 @@ FONT SIZE SYSTEM (px)
   --grey-text: #999999;
   --grey-background: #f8f9fa;
   --purple: #9775fa;
+  --light-shadow: 0 0 3px rgba(0, 0, 0, 0.068);
   --tools-logo-size: calc(1em + 1vh + 0.5vw);
   --social-links-size: calc(1em + 1vh + 0.5vw);
 }
@@ -162,7 +163,7 @@ article p {
   padding: 1em;
   border-radius: 10px;
   background-color: white;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.068);
+  box-shadow: var(--light-shadow);
 }
 
 .assets-container section {
@@ -308,7 +309,7 @@ ion-icon[name='logo-linkedin'] {
   border-radius: 10px;
   padding: 0.5em 1em;
   background-color: var(--grey-background);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.068);
+  box-shadow: var(--light-shadow);
   transition: all 0.2s;
 }
 .projects-list > li:hover {
@@ -337,6 +338,24 @@ ion-icon[name='logo-linkedin'] {
 
 .projects-thumbnail:active {
   transform: scale(0.97);
+}
+
+/* RECOMMENDATION */
+.recommendations-list {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.recommendation-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.068);
+}
+.logo-linkedin-recommendation {
+  position: absolute;
+  font-size: var(--tools-logo-size);
+  top: 1rem;
+  margin-left: -4rem;
 }
 
 /* CONTACT */

@@ -6,10 +6,16 @@
 
     <!-- REDIRECTING TO VERCEL URL -->
     <script>
+      const hostname = window.location.hostname;
       const vercelURL = 'lucas-amsellem-portfolio.vercel.app';
 
-      if (window.location.hostname !== vercelURL)
+      if (hostname === 'localhost') {
+        return;
+      }
+
+      if (hostname !== vercelURL) {
         window.location.href = 'https://' + vercelURL;
+      }
     </script>
 
     <meta
@@ -81,6 +87,7 @@
                 TypeScript, afin d'évoluer progressivement vers le développement
                 full-stack.
               </p>
+
               <ul class="contact-links">
                 <li>
                   <a
@@ -537,6 +544,25 @@
                   </li>
                 </ul>
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="recommendations">
+        <div class="side-padding">
+          <h2>Recommandations</h2>
+          <ul class="recommendations-list">
+            <li>
+              <img
+                src="img/recommendation-sell-deuche.PNG"
+                alt="Recommandation Linkedin Sell-Deuche-77"
+                class="recommendation-img"
+              />
+              <ion-icon
+                class="logo-linkedin-recommendation"
+                name="logo-linkedin"
+              />
             </li>
           </ul>
         </div>
