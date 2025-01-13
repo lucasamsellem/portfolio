@@ -527,6 +527,10 @@ textarea {
     display: none;
   }
 
+  .nav-links li a[href='#contact'] {
+    margin-right: unset;
+  }
+
   .nav-links {
     gap: 2.4rem;
   }
