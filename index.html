@@ -6,10 +6,10 @@
 
     <!-- REDIRECTING TO VERCEL URL -->
     <script>
-      window.onload = () => {
-        const vercelURL = 'https://lucas-amsellem-portfolio.vercel.app';
-        if (window.location.href !== vercelURL)
-          window.location.href = vercelURL;
+      window.onload = function () {
+        const vercelURL = 'lucas-amsellem-portfolio.vercel.app';
+        if (window.location.hostname !== vercelURL)
+          window.location.href = 'https://' + vercelURL;
       };
     </script>
 
