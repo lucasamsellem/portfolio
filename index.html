@@ -6,8 +6,11 @@
 
     <!-- REDIRECTING TO VERCEL URL -->
     <script>
-      const vercelURL = 'https://lucas-amsellem-portfolio.vercel.app';
-      if (window.location.href !== vercelURL) window.location.href = vercelURL;
+      window.onload = () => {
+        const vercelURL = 'https://lucas-amsellem-portfolio.vercel.app';
+        if (window.location.href !== vercelURL)
+          window.location.href = vercelURL;
+      };
     </script>
 
     <meta
