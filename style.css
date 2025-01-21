@@ -21,7 +21,6 @@ FONT SIZE SYSTEM (px)
   --light-shadow: 0 0 3px rgba(0, 0, 0, 0.068);
   --tools-logo-size: calc(1em + 1vh + 0.5vw);
   --social-links-size: calc(1em + 1vh + 0.5vw);
-  --github-logo: ;
 }
 
 html {
@@ -149,12 +148,13 @@ article {
 
 article h3 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 article p {
   font-size: 1.6rem;
   color: var(--font-color);
+  /* font-weight: 500; */
 }
 
 /* SKILLS */
@@ -206,9 +206,6 @@ article p {
 .logo {
   height: var(--tools-logo-size);
 }
-.logo-typescript {
-  border-radius: 10px;
-}
 
 img[alt='Logo Mairie de Paris'],
 img[alt='Logo école web 3W Academy'],
@@ -226,7 +223,6 @@ ion-icon[name='logo-css3'] {
 }
 ion-icon[name='logo-javascript'] {
   color: #f0db4f;
-  border-radius: 8px;
 }
 ion-icon[name='logo-react'] {
   color: #61dbfb;
@@ -260,6 +256,10 @@ ion-icon[name='logo-linkedin'] {
   font-size: 1.6rem;
 }
 
+.qualifications-list p {
+  font-weight: 500;
+}
+
 .qualifications-list a {
   text-decoration: underline;
   color: var(--grey-text) !important;
@@ -281,16 +281,13 @@ ion-icon[name='logo-linkedin'] {
   justify-content: space-between;
   position: relative;
 }
-
 .project-header ion-icon {
   margin-inline: -1rem;
 }
-
 .project-header ion-icon[name='logo-github'] {
   display: flex;
   transition: all 0.2s;
 }
-
 .project-header ion-icon[name='logo-github']:active {
   transform: scale(0.9);
 }
