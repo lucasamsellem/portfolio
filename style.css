@@ -43,6 +43,10 @@ header {
   top: 0;
 }
 
+header p {
+  font-size: 2rem;
+}
+
 section {
   scroll-margin-top: 7rem;
   margin: 8rem 0;
@@ -83,9 +87,9 @@ a:visited {
   background-color: #ac91fb;
 }
 
-.nav-links li a[href='#contact'] {
+/* .nav-links li a[href='#contact'] {
   margin-right: 2.4rem;
-}
+} */
 
 .language-flag {
   display: flex;
@@ -483,10 +487,6 @@ textarea {
     padding: 1em 2em;
   }
 
-  .nav-links {
-    gap: 2.4rem;
-  }
-
   section {
     margin: 6rem 0;
   }
@@ -522,7 +522,7 @@ textarea {
   header {
     font-size: 1.6rem;
     padding: 1em 2em;
-    flex-direction: column;
+    justify-content: center;
   }
 
   header > p {
@@ -531,10 +531,6 @@ textarea {
 
   .nav-links li a[href='#contact'] {
     margin-right: unset;
-  }
-
-  .nav-links {
-    gap: 2.4rem;
   }
 
   .grid-2-col,
