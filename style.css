@@ -104,7 +104,7 @@ a:visited {
 }
 
 .side-padding {
-  max-width: 135rem;
+  max-width: 145rem;
   margin: 0 auto;
   padding: 3rem;
 }
@@ -205,7 +205,7 @@ article p {
 }
 
 .tools-list li:hover {
-  box-shadow: 0 0 2px 1px rgba(128, 128, 128, 0.125);
+  box-shadow: 0 0 2px 1px rgba(128, 128, 128, 0.263);
 }
 
 .tools-list-smaller li {
@@ -322,7 +322,7 @@ ion-icon[name='logo-linkedin'] {
 }
 
 .projects-list {
-  column-gap: 6.8rem !important;
+  gap: 6.8rem !important;
 }
 
 .projects-list > li {
@@ -350,6 +350,7 @@ ion-icon[name='logo-linkedin'] {
 
 .projects-thumbnail {
   width: 100%;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.056);
   text-align: center;
