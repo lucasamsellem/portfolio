@@ -29,7 +29,11 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
+body {
+  color: var(--font-color);
+}
+
+.header {
   font-size: 1.6rem;
   display: flex;
   justify-content: space-between;
@@ -50,10 +54,6 @@ header p {
 section {
   scroll-margin-top: 7rem;
   margin: 8rem 0;
-}
-
-body {
-  color: var(--font-color);
 }
 
 ul {
@@ -117,7 +117,7 @@ a:visited {
 h2 {
   font-size: 4rem;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   border-bottom: rgba(0, 0, 0, 0.095) solid 1px;
   border-color: var(--purple);
@@ -125,17 +125,11 @@ h2 {
   margin-bottom: 9.6rem;
 }
 
-h4 {
-  text-align: center;
-  margin-bottom: 2.4rem;
-  letter-spacing: 1px;
-}
-
 .grid-2-col {
   grid-template-columns: repeat(2, 1fr);
   font-size: 2.5rem;
   display: grid;
-  gap: 4.8rem;
+  gap: 5.2rem;
   justify-items: center;
 }
 
@@ -143,7 +137,7 @@ h4 {
 article {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 5.2rem;
 }
 
 article h1 {
@@ -152,37 +146,47 @@ article h1 {
 }
 
 article h3 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700;
 }
 
 article p {
   font-size: 1.6rem;
-  color: var(--font-color);
   font-weight: 500;
 }
 
 /* SKILLS */
 .assets-container {
   display: grid;
-  gap: 6.4rem;
-  padding: 1em;
+  gap: 8rem;
+  padding: 1.2em;
   border-radius: 10px;
   background-color: white;
   box-shadow: var(--light-shadow);
+  height: fit-content;
 }
 
 .assets-container section {
   margin: unset;
 }
 
+.assets-container h4 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  letter-spacing: 1px;
+}
+
 .tools-list,
 .tools-list-smaller {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 1.6rem;
+}
+
+.tools-list-smaller {
+  justify-content: center;
 }
 
 .tools-list li {
@@ -191,11 +195,17 @@ article p {
   justify-content: center;
   gap: 1rem;
   font-size: 1.6rem;
-  background-color: var(--grey-background);
-  color: var(--font-color);
+  border: 1px rgba(128, 128, 128, 0.19) solid;
+  /* background: white; */
+  /* background-color: var(--grey-background); */
   padding: 0.5em 1em;
   border-radius: 10px;
   font-weight: 600;
+  transition: all 0.2s;
+}
+
+.tools-list li:hover {
+  box-shadow: 0 0 2px 1px rgba(128, 128, 128, 0.125);
 }
 
 .tools-list-smaller li {
@@ -311,6 +321,10 @@ ion-icon[name='logo-linkedin'] {
   transition: all 0.3s;
 }
 
+.projects-list {
+  column-gap: 6.8rem !important;
+}
+
 .projects-list > li {
   display: grid;
   text-align: center;
@@ -338,9 +352,8 @@ ion-icon[name='logo-linkedin'] {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.056);
-  cursor: pointer;
   text-align: center;
-  margin: 4.2rem 0;
+  margin: 4rem 0;
   transition: all 0.2s;
 }
 
@@ -423,7 +436,7 @@ textarea {
   transition: all 0.2s;
 }
 .contact-links li:hover {
-  background-color: #dfe0e1;
+  background-color: #dfe0e1c7;
 }
 .contact-links a > * {
   display: flex;
@@ -486,7 +499,7 @@ textarea {
 
 /* Responsive Design */
 @media (max-width: 910px) {
-  header {
+  .header {
     font-size: 1.4rem;
     padding: 1em 2em;
   }
@@ -506,10 +519,6 @@ textarea {
     gap: 3.2rem;
   }
 
-  /* .projects-thumbnail {
-    width: 90%;
-  } */
-
   .recommendations-list {
     max-width: 100%;
   }
@@ -523,7 +532,7 @@ textarea {
   html {
     font-size: 50%;
   }
-  header {
+  .header {
     font-size: 1.6rem;
     padding: 1em 2em;
     justify-content: center;
@@ -541,5 +550,9 @@ textarea {
   .grid-3-col {
     grid-template-columns: 1fr;
     gap: 3.2rem;
+  }
+
+  .tools-list {
+    justify-content: center;
   }
 }
