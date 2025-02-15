@@ -24,7 +24,7 @@ FONT SIZE SYSTEM (px)
 
 html {
   font-size: 62.5%;
-  line-height: 1.7;
+  line-height: 1.6;
   scroll-behavior: smooth;
 }
 
@@ -36,7 +36,7 @@ body,
 input,
 textarea,
 button {
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1px;
   font-family: 'Montserrat', sans-serif;
 }
 
