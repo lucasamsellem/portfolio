@@ -10,7 +10,6 @@ FONT SIZE SYSTEM (px)
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -25,12 +24,20 @@ FONT SIZE SYSTEM (px)
 
 html {
   font-size: 62.5%;
-  line-height: 1.6;
+  line-height: 1.7;
   scroll-behavior: smooth;
 }
 
 body {
   color: var(--font-color);
+}
+
+body,
+input,
+textarea,
+button {
+  letter-spacing: 0.2px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header {
