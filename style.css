@@ -212,7 +212,7 @@ article p {
 }
 
 .tools-list li:hover {
-  box-shadow: 0 0 2px 1px rgba(128, 128, 128, 0.263);
+  box-shadow: 0 0 0 1px rgba(128, 128, 128, 0.263);
 }
 
 .tools-list-smaller li {
