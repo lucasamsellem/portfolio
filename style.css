@@ -1,0 +1,598 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 / 112 / 126 / 142 / 158 / 176 / 194 / 214 / 234
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-color: #333;
+  --grey-text: #999999;
+  --grey-background: #f8f9fa;
+  --purple: #9775fa;
+  --light-shadow: 0 0 3px rgba(0, 0, 0, 0.068);
+  --tools-logo-size: calc(1em + 1vh + 0.5vw);
+  --social-links-size: calc(1em + 1vh + 0.5vw);
+  --scale-down: scale(0.9);
+  --social-icon-padding: 1rem;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--font-color);
+}
+
+body,
+input,
+textarea,
+button {
+  letter-spacing: 0.1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2em 4em;
+  font-weight: 700;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+
+header p {
+  font-size: 2rem;
+}
+
+section {
+  scroll-margin-top: 7rem;
+  margin: 8rem 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:active,
+a:visited {
+  color: var(--font-color);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.nav-links li a {
+  background-color: var(--purple);
+  padding: 0.6em 1em;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.2s;
+}
+
+.nav-links li a:hover {
+  background-color: #ac91fb;
+}
+
+/* .nav-links li a[href='#contact'] {
+  margin-right: 2.4rem;
+} */
+
+/* .language-flag {
+  display: flex;
+  font-size: 3rem;
+  background: unset !important;
+  padding: unset !important;
+  transition: all 0.2s;
+}
+
+.language-flag:active {
+  transform: (0.9scale);
+} */
+
+.side-padding {
+  max-width: 145rem;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+#home,
+#contact {
+  background-color: var(--grey-background);
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border-bottom: rgba(0, 0, 0, 0.095) solid 1px;
+  border-color: var(--purple);
+  padding-bottom: 1.6rem;
+  margin-bottom: 9.6rem;
+}
+
+.grid-2-col {
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 2.5rem;
+  display: grid;
+  gap: 5.2rem;
+  justify-items: center;
+}
+
+/* ABOUT */
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+article h1 {
+  color: var(--purple);
+  font-size: 3rem;
+}
+
+article h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+article p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* SKILLS */
+.assets-container {
+  display: grid;
+  gap: 8rem;
+  padding: 1.2em;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: var(--light-shadow);
+  height: fit-content;
+}
+
+.assets-container section {
+  margin: unset;
+}
+
+.assets-container h4 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  letter-spacing: 1px;
+}
+
+.tools-list,
+.tools-list-smaller {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+.tools-list-smaller {
+  justify-content: center;
+}
+
+.tools-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+  border: 1px rgba(128, 128, 128, 0.19) solid;
+  /* background: white; */
+  /* background-color: var(--grey-background); */
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.tools-list li:hover {
+  box-shadow: 0 0 0 1px rgba(128, 128, 128, 0.263);
+}
+
+.tools-list-smaller li {
+  display: flex;
+}
+
+.tools-list ion-icon,
+.tools-list-smaller ion-icon {
+  font-size: var(--tools-logo-size);
+}
+
+/* LOGO */
+.tools-list li img,
+.tools-list-smaller li img,
+img[alt='Logo Udemy'],
+.logo {
+  height: var(--tools-logo-size);
+}
+
+img[alt='Logo Mairie de Paris'],
+img[alt='Logo école web 3W Academy'],
+img[alt='Logo Udemy'] {
+  width: 100%;
+}
+ion-icon[name='logo-html5'] {
+  color: #e44d26;
+}
+ion-icon[name='logo-html5'] {
+  color: #e44d26;
+}
+ion-icon[name='logo-css3'] {
+  color: #2965f1;
+}
+ion-icon[name='logo-javascript'] {
+  color: #f0db4f;
+}
+ion-icon[name='logo-react'] {
+  color: #61dbfb;
+}
+ion-icon[name='git-branch-outline'] {
+  color: #f1502f;
+}
+ion-icon[name='logo-github'] {
+  color: var(--font-color);
+}
+ion-icon[name='logo-linkedin'] {
+  color: #0a66c2;
+}
+.shadcnui-logo {
+  border-radius: 100%;
+  padding: 0.4rem;
+  background-color: #000000;
+  height: calc(0.7em + 1vh + 0.5vw) !important;
+}
+
+.qualifications-list {
+  display: grid;
+  gap: 3.2rem;
+}
+
+.qualifications-list li {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr;
+  align-items: center;
+  gap: 2.4rem;
+  font-size: 1.6rem;
+}
+
+.qualifications-list p {
+  font-weight: 500;
+}
+
+.qualifications-list a {
+  text-decoration: underline;
+  color: var(--grey-text) !important;
+  font-size: 1.4rem;
+  transition: all 0.2s;
+}
+.qualifications-list a:hover {
+  color: rgb(192, 192, 192) !important;
+}
+.school {
+  position: relative;
+  grid-template-columns: 2.2rem 1fr auto !important;
+}
+
+/* PROJECTS */
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.project-header ion-icon {
+  margin-inline: -1rem;
+}
+.project-header ion-icon[name='logo-github'] {
+  display: flex;
+  transition: all 0.2s;
+}
+.project-header ion-icon[name='logo-github']:active {
+  transform: var(--scale-down);
+}
+
+.info-icon {
+  font-size: 2.4rem;
+  opacity: 0.2;
+  border: unset;
+  background: unset;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.projects-list {
+  gap: 6.8rem !important;
+}
+
+.projects-list > li {
+  display: grid;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  background-color: var(--grey-background);
+  box-shadow: var(--light-shadow);
+  transition: all 0.2s;
+}
+.projects-list > li:hover {
+  transform: translateY(-7px);
+}
+
+.projects-list h4 {
+  margin-bottom: 0.6rem;
+}
+
+.projects-list h5 {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: unset;
+}
+
+.projects-thumbnail {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.056);
+  text-align: center;
+  margin: 4rem 0;
+  transition: all 0.2s;
+}
+
+.projects-thumbnail:active {
+  transform: scale(0.97);
+}
+
+/* RECOMMENDATION */
+.testimonials-list {
+  display: flex;
+  gap: 4.8rem;
+}
+.testimonial-item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey-background);
+  border-radius: 10px;
+  font-size: 1.6rem;
+  padding: 1.4em;
+  gap: 3.2rem;
+  box-shadow: var(--light-shadow);
+  height: fit-content;
+}
+.testimonial-item header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 2.4rem;
+}
+.testimonial-item header img {
+  border-radius: 100%;
+  width: 10rem;
+}
+.recommender-info h4 {
+  font-size: 2.4rem;
+}
+.recommender-info h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+.recommender-info h6 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.testimonial-item p {
+  font-weight: 500;
+}
+.recommender-links {
+  display: flex;
+  font-size: var(--tools-logo-size);
+  gap: 1rem;
+}
+.recommender-links a ion-icon {
+  padding: var(--social-icon-padding);
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+.recommender-links a ion-icon:hover {
+  background-color: #dfe0e1c7;
+}
+
+/* CONTACT */
+.contact-section {
+  margin-bottom: 0;
+}
+.contact-form {
+  max-width: 50%;
+  margin: 0 auto;
+  margin-bottom: 9.6rem;
+}
+.feedback-input {
+  font-weight: 400;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid var(--purple);
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  outline: 0;
+  transition: all 0.2s;
+}
+.feedback-input:focus {
+  border: 2px solid #6e46e9;
+}
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+.contact-form button {
+  width: 100%;
+  background: var(--purple);
+  border-radius: 10px;
+  border: unset;
+  color: white;
+  font-size: 2rem;
+  padding: 10px 0 10px 0;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.contact-form button:hover {
+  background: #ac91fb;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  font-size: 3rem;
+}
+.contact-links li {
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+.contact-links li:hover {
+  background-color: #dfe0e1c7;
+}
+.contact-links a > * {
+  display: flex;
+  padding: var(--social-icon-padding);
+}
+.contact-links ion-icon {
+  font-size: var(--social-links-size);
+}
+.contact-links img[alt='CV de Lucas Amsellem'] {
+  height: var(--social-links-size);
+  box-sizing: unset;
+}
+
+/* DYNAMIC */
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  font-size: 1.2rem;
+  width: fit-content;
+  text-wrap: nowrap;
+  background-color: var(--font-color);
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.3em 1em;
+  z-index: 999;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 500;
+  transition: all 0.4s;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 100;
+}
+
+.popup {
+  top: 3rem;
+  right: -1rem;
+  position: absolute;
+  max-width: 25rem;
+  font-size: 1.4rem;
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  text-align: left;
+  transition: all 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 910px) {
+  .header {
+    font-size: 1.4rem;
+    padding: 1em 2em;
+  }
+
+  section {
+    margin: 6rem 0;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 6rem;
+  }
+
+  .grid-2-col,
+  .grid-3-col {
+    grid-template-columns: 1fr;
+  }
+
+  .recommendations-list {
+    max-width: 100%;
+  }
+  .contact-form {
+    max-width: 80%;
+  }
+}
+
+/* PHONE */
+@media (max-width: 725px) {
+  html {
+    font-size: 50%;
+  }
+  .header {
+    font-size: 1.6rem;
+    padding: 1em 2em;
+    justify-content: center;
+  }
+
+  header > p {
+    display: none;
+  }
+
+  .nav-links li a[href='#contact'] {
+    margin-right: unset;
+  }
+
+  /* .tools-list {
+    justify-content: center;
+  } */
+}

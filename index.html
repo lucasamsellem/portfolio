@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- REDIRECTING TO VERCEL URL -->
+    <script>
+      const hostname = window.location.hostname;
+      const vercelURL = 'lucas-amsellem-portfolio.vercel.app';
+
+      if (hostname === 'localhost') {
+        return;
+      }
+
+      if (hostname !== vercelURL) {
+        window.location.href = 'https://' + vercelURL;
+      }
+    </script>
+
+    <meta
+      name="description"
+      content="Lucas Amsellem, développeur front-end spécialisé en React, Vue.js, TypeScript et PHP"
+    />
+    <meta name="author" content="Lucas Amsellem" />
+    <title>Lucas Amsellem | Développeur front-end</title>
+    <link rel="icon" type="image/x-icon" href="icons/code.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <p>LUCAS AMSELLEM</p>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li class="tooltip">
+            <a class="logo language-flag" href="index-en.html"
+              ><img src="icons/uk-flag.svg" alt="UK flag"
+            /></a>
+            <span class="tooltiptext">Switch to English</span>
+          </li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="side-padding">
+          <h2>Accueil</h2>
+          <div class="grid-2-col">
+            <article>
+              <header>
+                <h1>LUCAS AMSELLEM</h1>
+                <h3>Développeur front-end</h3>
+              </header>
+              <ul class="tools-list">
+                <li>HTML <ion-icon name="logo-html5" /></li>
+                <li>CSS <ion-icon name="logo-css3" /></li>
+                <li>
+                  JavaScript
+                  <ion-icon name="logo-javascript" />
+                </li>
+                <li>React <ion-icon name="logo-react" /></li>
+                <li>
+                  Vue
+                  <img src="icons/vue-logo.svg" alt="Vue.js icon" />
+                </li>
+                <li>
+                  TypeScript
+                  <img src="icons/typescript-logo.svg" alt="TypeScript logo" />
+                </li>
+                <li>
+                  PHP
+                  <img src="icons/php-logo.svg" alt="Logo PHP" />
+                </li>
+                <li>
+                  MySQL
+                  <img src="icons/mysql-logo.svg" alt="Logo MySQL" />
+                </li>
+                <li>
+                  Tailwind
+                  <img src="/icons/tailwind-logo.svg" alt="Tailwind CSS Logo" />
+                </li>
+                <li>
+                  Figma
+                  <img src="/icons/figma-icon.svg" alt="Figma Logo" />
+                </li>
+                <li>
+                  WordPress
+                  <img src="icons/wordpress-icon.svg" alt="Logo Wordpress" />
+                </li>
+                <li>
+                  Jest
+                  <img src="/icons/jest-icon.svg" alt="Jest Logo" />
+                </li>
+                <li>
+                  Docker
+                  <img src="icons/docker-mark-blue.svg" alt="Docker Icon" />
+                </li>
+                <li>
+                  Shadcn UI
+                  <img
+                    src="icons/shadcn-ui-seeklogo.svg"
+                    alt="Logo Shadcn UI"
+                    class="shadcnui-logo"
+                  />
+                </li>
+                <li>Git <ion-icon name="git-branch-outline" /></li>
+              </ul>
+              <p>
+                Autodidacte, j'ai commencé à apprendre le développement web en
+                septembre 2023, en parallèle de mon alternance en tant qu'agent
+                artistique dans la musique classique. Cette expérience
+                professionnelle de près de deux ans m'a permis de renforcer
+                considérablement mes compétences en travail d'équipe, en
+                communication et en organisation.
+              </p>
+              <p>
+                Je souhaite me spécialiser dans le développement front-end pour
+                implémenter et améliorer les fonctionnalités des interfaces
+                utilisateur. Mon objectif est de consolider mes compétences avec
+                PHP/Symfony ainsi que React, Vue et TypeScript, afin d'évoluer
+                progressivement vers le développement full-stack.
+              </p>
+            </article>
+
+            <div class="assets-container">
+              <section>
+                <h4>Certifications</h4>
+                <ul class="qualifications-list">
+                  <li>
+                    <img src="icons/udemy-logo.svg" alt="Logo Udemy" />
+                    <p>
+                      Build Responsive Real-World Websites with
+                      <strong>HTML</strong> and <strong>CSS</strong>
+                      <br />
+                      <a
+                        href="https://www.udemy.com/certificate/UC-5b6878ee-91eb-40e7-8dd9-d6a55bd66243/"
+                        target="_blank"
+                        >Certificat</a
+                      >
+                    </p>
+                  </li>
+                  <li>
+                    <img src="icons/udemy-logo.svg" alt="Logo Udemy" />
+                    <p>
+                      The Complete
+                      <strong>JavaScript</strong> Course 2024: From Zero to
+                      Expert!
+                      <br />
+                      <a
+                        href="https://www.udemy.com/certificate/UC-99e42cc5-9044-443a-897b-9ac9d41802b5/"
+                        target="_blank"
+                        >Certificat</a
+                      >
+                    </p>
+                  </li>
+                  <li>
+                    <img src="icons/udemy-logo.svg" alt="Logo Udemy" />
+                    <p>
+                      Modern <strong>PHP</strong>: The Complete Guide
+                      <br />
+                      <a
+                        href="https://www.udemy.com/certificate/UC-6450ac14-f4bc-47ab-aa0b-9a55a3161d4a/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
+                        target="_blank"
+                        >Certificat</a
+                      >
+                    </p>
+                  </li>
+                  <li>
+                    <img
+                      src="icons/paris-logo.png"
+                      alt="Logo Mairie de Paris"
+                    />
+                    <p>
+                      Initiation à la programmation avec
+                      <strong>JavaScript</strong>
+                      <br />
+                      <a
+                        href="pdf/P5-PR1-W3 Attestation d'assiduité_AMSELLEM Lucas.pdf"
+                        target="_blank"
+                        >Certificat</a
+                      >
+                    </p>
+                  </li>
+                </ul>
+              </section>
+
+              <section>
+                <h4>En cours</h4>
+                <ul class="qualifications-list">
+                  <li>
+                    <img
+                      src="icons/udemy-logo.svg"
+                      alt="Logo Udemy"
+                      class="logo udemy-logo"
+                    />
+                    <p>
+                      The Ultimate <strong>React</strong> Course 2024: React,
+                      Next.js, Redux & More
+                    </p>
+                  </li>
+                </ul>
+              </section>
+
+              <section>
+                <h4>Formation</h4>
+                <ul class="qualifications-list">
+                  <li class="has-popup school">
+                    <img
+                      src="icons/3w-logo.jpg"
+                      alt="Logo école web 3W Academy"
+                    />
+                    <p>
+                      Développeur full-stack
+                      <i>(3W Academy)</i>
+                    </p>
+                    <div>
+                      <button class="info-icon">
+                        <ion-icon name="information-circle-outline" />
+                      </button>
+                      <p class="hidden popup">
+                        Formation en contrat d'apprentissage d'un an, précédée
+                        d'une pré-formation intensive de 3 mois en JavaScript et
+                        PHP
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="side-padding">
+          <h2>Projets</h2>
+          <ul class="grid-2-col projects-list">
+            <li class="has-popup">
+              <div class="project-header">
+                <a
+                  href="https://github.com/lucasamsellem/budget-tracker"
+                  target="_blank"
+                  ><ion-icon name="logo-github"
+                /></a>
+                <button class="info-icon">
+                  <ion-icon name="information-circle-outline" />
+                </button>
+                <p class="hidden popup">
+                  Budget Tracker, mon projet le plus abouti à ce jour, permet
+                  d'ajouter des fonds, de définir un budget à respecter, de
+                  saisir ses dépenses, le tout accompagné de graphiques
+                  interactifs. Ce projet intègre des fonctionnalités plus
+                  avancées telles que du routing, le Context API, TypeScript,
+                  ainsi que l’intégration de composants externes avec Shadcn UI
+                </p>
+              </div>
+
+              <h4>Budget Tracker</h4>
+              <h5>
+                Réplication d'une application bancaire permettant de suivre ses
+                dépenses
+              </h5>
+              <a
+                href="https://lucasamsellem.github.io/budget-tracker/"
+                target="_blank"
+              >
+                <img
+                  src="img/budget-tracker-thumbnail.webp"
+                  alt="Aperçu de l'application Budget Tracker"
+                  class="projects-thumbnail"
+                />
+              </a>
+
+              <ul class="tools-list-smaller">
+                <li>
+                  <ion-icon name="logo-react" />
+                </li>
+                <li>
+                  <img src="/icons/tailwind-logo.svg" alt="Tailwind CSS Logo" />
+                </li>
+                <li>
+                  <img src="icons/typescript-logo.svg" alt="TypeScript logo" />
+                </li>
+                <li>
+                  <img
+                    src="icons/shadcn-ui-seeklogo.svg"
+                    alt="Logo Shadcn UI"
+                    class="shadcnui-logo"
+                  />
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-popup">
+              <div class="project-header">
+                <a
+                  href="https://github.com/lucasamsellem/historical-events/"
+                  target="_blank"
+                  ><ion-icon name="logo-github"
+                /></a>
+                <button class="info-icon">
+                  <ion-icon name="information-circle-outline" />
+                </button>
+                <p class="hidden popup">
+                  Lorsque l'utilisateur entre un mot-clé dans la barre de
+                  recherche, l'application envoie une requête à l'API pour
+                  récupérer et afficher les événements majeurs associés à ce
+                  mot-clé. Un test unitaire a été implémenté pour cette requête
+                  API, afin de me familiariser avec les tests unitaires
+                </p>
+              </div>
+
+              <h4>Historical Events</h4>
+              <h5>Listes d'événements historiques majeurs (avec API)</h5>
+              <a
+                href="https://lucasamsellem.github.io/historical-events/"
+                target="_blank"
+              >
+                <img
+                  src="img/historical-events-thumbnail.webp"
+                  alt="Aperçu de l'application d'événements historiques"
+                  class="projects-thumbnail"
+                />
+              </a>
+              <ul class="tools-list-smaller">
+                <li>
+                  <ion-icon name="logo-react" />
+                </li>
+                <li>
+                  <img src="/icons/tailwind-logo.svg" alt="Tailwind CSS Logo" />
+                </li>
+                <li>
+                  <img src="/icons/jest-icon.svg" alt="Jest Logo" />
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-popup">
+              <div class="project-header">
+                <a
+                  href="https://github.com/lucasamsellem/order-taking/"
+                  target="_blank"
+                  ><ion-icon name="logo-github"
+                /></a>
+                <button class="info-icon">
+                  <ion-icon name="information-circle-outline" />
+                </button>
+                <p class="hidden popup">
+                  Lors de la validation du panier, une API de géocodage inversé
+                  récupère la localisation de l'utilisateur pour l'afficher dans
+                  la simulation de confirmation de commande
+                </p>
+              </div>
+              <h4>Order Taking</h4>
+              <h5>
+                Simulation de réservation en ligne de fast-food
+                <i>(avec API)</i>
+              </h5>
+              <a
+                href="https://lucasamsellem.github.io/order-taking/"
+                target="_blank"
+              >
+                <img
+                  src="img/order-taking-thumbnail.webp"
+                  alt="Aperçu d'une simulation de réservation en ligne de fast-food"
+                  class="projects-thumbnail"
+                />
+              </a>
+              <div>
+                <ul class="tools-list-smaller">
+                  <li>
+                    <img src="icons/vue-logo.svg" alt="Vue.js icon" />
+                  </li>
+                  <li>
+                    <img
+                      src="icons/typescript-logo.svg"
+                      alt="TypeScript logo"
+                    />
+                  </li>
+                  <li>
+                    <img src="icons/tailwind-logo.svg" alt="Tailwind logo" />
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="has-popup">
+              <div class="project-header">
+                <a
+                  href="https://github.com/lucasamsellem/capital-guesser/"
+                  target="_blank"
+                  ><ion-icon name="logo-github"
+                /></a>
+                <button class="info-icon">
+                  <ion-icon name="information-circle-outline" />
+                </button>
+                <p class="hidden popup">
+                  Jeu avec différents modes de difficulté, un chronomètre, une
+                  barre de progression et des indices interactifs
+                </p>
+              </div>
+
+              <h4>Capital Guesser</h4>
+              <h5>Quizz de capitales</h5>
+              <a
+                href="https://lucasamsellem.github.io/capital-guesser/"
+                target="_blank"
+              >
+                <img
+                  src="img/capital-guesser-thumbnail.webp"
+                  alt="Aperçu d'un quizz de capitales"
+                  class="projects-thumbnail"
+                />
+              </a>
+              <div>
+                <ul class="tools-list-smaller">
+                  <li>
+                    <ion-icon name="logo-html5" />
+                  </li>
+                  <li>
+                    <ion-icon name="logo-css3" />
+                  </li>
+                  <li>
+                    <ion-icon name="logo-javascript" />
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="recommendations">
+        <div class="side-padding">
+          <h2>Recommandations</h2>
+          <ul class="testimonials-list">
+            <li class="testimonial-item">
+              <header>
+                <img
+                  src="img/testimonials/guillaume-beseme.jpeg"
+                  alt="Photo de profil Linkedin Guillaume Beseme"
+                />
+                <div class="recommender-info">
+                  <h4>Guillaume Beseme</h4>
+                  <h5>
+                    Apporteur de solutions selleries 2CV pour les passionnés de
+                    cette icône automobile
+                  </h5>
+                  <h6>
+                    Le 15 novembre 2024, Guillaume a été le/la client(e) de
+                    Lucas
+                  </h6>
+                </div>
+                <div class="recommender-links">
+                  <a href="https://sell-deuche-77.fr/" target="_blank">
+                    <ion-icon name="globe-outline" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/guillaume-beseme-56641b153/"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-linkedin" />
+                  </a>
+                </div>
+              </header>
+              <p>
+                "Après le lancement de mon activité d’auto-entrepreneur en
+                sellerie automobile pour 2CV et dérivés (« SELL-DEUCHE-77 »), je
+                recherchais un intervenant compétent pour développer et mettre
+                en ligne un site Internet dédié. Lucas a parfaitement su
+                répondre à mes besoins en terme de visibilité et de mise en
+                avant des contenus que je souhaitais y mettre, et se montre
+                réactif lorsque j’ai besoin de mises à jour et d’améliorations,
+                tant sur la forme que sur le fond. Tout à fait satisfait de ses
+                prestations qui correspondent tout à fait à ma demande !"
+              </p>
+            </li>
+            <!-- <li class="testimonial-item">
+              <header>
+                <img
+                  src="img/testimonials/marie-rolland.jpg"
+                  alt="Photo de profil Marie Rolland"
+                />
+                <div class="recommender-info">
+                  <h4>Marie Rolland</h4>
+                  <h5>Photographe</h5>
+                  <h6>
+                    Le 23 février 2025, Marie a été le/la client(e) de Lucas
+                  </h6>
+                </div>
+                <div class="recommender-links">
+                  <a href="https://marie-rolland.com/" target="_blank">
+                    <ion-icon name="globe-outline" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/marie-rolland-8b133841/"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-linkedin" />
+                  </a>
+                </div>
+              </header>
+              <p>
+                "Après le lancement de mon activité d’auto-entrepreneur en
+                sellerie automobile pour 2CV et dérivés (« SELL-DEUCHE-77 »), je
+                recherchais un intervenant compétent pour développer et mettre
+                en ligne un site Internet dédié. Lucas a parfaitement su
+                répondre à mes besoins en terme de visibilité et de mise en
+                avant des contenus que je souhaitais y mettre, et se montre
+                réactif lorsque j’ai besoin de mises à jour et d’améliorations,
+                tant sur la forme que sur le fond. Tout à fait satisfait de ses
+                prestations qui correspondent tout à fait à ma demande !"
+              </p>
+            </li> -->
+          </ul>
+          <!-- <ul class="recommendations-list">
+            <li>
+              <img
+                src="img/recommendation-sell-deuche.PNG"
+                alt="Recommandation Linkedin Sell-Deuche-77"
+                class="recommendation-img"
+              />
+              <ion-icon
+                
+                name="logo-linkedin"
+              />
+            </li>
+          </ul> -->
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="side-padding">
+          <h2>Contact</h2>
+          <form class="contact-form" action="/api/sendForm.js" method="POST">
+            <input
+              class="feedback-input"
+              type="text"
+              name="name"
+              placeholder="Nom"
+              required
+            />
+            <input
+              class="feedback-input"
+              name="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              class="feedback-input"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit">Envoyer</button>
+          </form>
+          <ul class="contact-links">
+            <li>
+              <a
+                href="https://fr.linkedin.com/in/lucas-amsellem-7894442b0?original_referer="
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin" />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/lucasamsellem" target="_blank">
+                <ion-icon name="logo-github" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="pdf/CV Lucas AMSELLEM - alternance développeur front-end - 3W.pdf"
+                target="_blank"
+              >
+                <img src="icons/resume-logo.svg" alt="CV de Lucas Amsellem" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
