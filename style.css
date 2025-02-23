@@ -262,6 +262,7 @@ ion-icon[name='logo-github'] {
 }
 ion-icon[name='logo-linkedin'] {
   color: #0a66c2;
+  border-radius: 0px;
 }
 .shadcnui-logo {
   border-radius: 100%;
@@ -605,6 +606,7 @@ textarea {
     width: 100%;
   }
   .recommender-links {
+    font-size: 3.2rem;
     gap: 2.4rem;
   }
   .recommender-links a ion-icon {
