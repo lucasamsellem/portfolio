@@ -417,6 +417,9 @@ ion-icon[name='logo-linkedin'] {
   font-size: var(--tools-logo-size);
   gap: 1rem;
 }
+.recommender-links a {
+  display: flex;
+}
 .recommender-links a ion-icon {
   padding: var(--social-icon-padding);
   border-radius: 10px;
@@ -592,7 +595,22 @@ textarea {
     margin-right: unset;
   }
 
-  /* .tools-list {
-    justify-content: center;
-  } */
+  .testimonial-item header {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    row-gap: 1.2rem;
+    justify-items: end;
+  }
+  .testimonial-item header img {
+    width: 100%;
+  }
+  .recommender-links {
+    gap: 2.4rem;
+  }
+  .recommender-links a ion-icon {
+    padding: unset;
+  }
+  .recommender-links {
+    grid-area: 2 / 2;
+  }
 }
