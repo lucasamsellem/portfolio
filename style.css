@@ -98,22 +98,6 @@ a:visited {
   background-color: #ac91fb;
 }
 
-/* .nav-links li a[href='#contact'] {
-  margin-right: 2.4rem;
-} */
-
-/* .language-flag {
-  display: flex;
-  font-size: 3rem;
-  background: unset !important;
-  padding: unset !important;
-  transition: all 0.2s;
-}
-
-.language-flag:active {
-  transform: (0.9scale);
-} */
-
 .side-padding {
   max-width: 145rem;
   margin: 0 auto;
