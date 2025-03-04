@@ -416,7 +416,6 @@ ion-icon[name='globe-outline'] {
 }
 .recommender-links a ion-icon {
   padding: var(--social-icon-padding);
-  border-radius: 10px;
   transition: all 0.2s;
 }
 .recommender-links a ion-icon:hover {
@@ -615,7 +614,7 @@ textarea {
 @media (max-width: 500px) {
   .testimonial-item header {
     grid-template-columns: 10rem 1fr;
-    row-gap: 1.2rem;
+    row-gap: 1.6rem;
   }
   .recommender-links {
     grid-area: 2 / 2;
