@@ -363,9 +363,8 @@ ion-icon[name='globe-outline'] {
 
 /* RECOMMENDATION */
 .testimonials-list {
-  display: grid;
+  display: flex;
   flex-direction: column;
-  /* grid-template-columns: repeat(2, 1fr); */
   gap: 4.8rem;
 }
 .testimonial-item {
@@ -592,11 +591,13 @@ textarea {
     margin-right: unset;
   }
 
+  .tools-list li {
+    font-size: 1.5rem;
+  }
+
   .testimonial-item header {
     display: grid;
-    grid-template-columns: 10rem 1fr;
-    row-gap: 1.2rem;
-    justify-items: end;
+    grid-template-columns: 10rem 1fr auto;
   }
   .testimonial-item header img {
     width: 100%;
@@ -604,9 +605,17 @@ textarea {
   .recommender-links {
     font-size: 3.2rem;
     gap: 2.4rem;
+    justify-content: end;
   }
   .recommender-links a ion-icon {
     padding: unset;
+  }
+}
+
+@media (max-width: 500px) {
+  .testimonial-item header {
+    grid-template-columns: 10rem 1fr;
+    row-gap: 1.2rem;
   }
   .recommender-links {
     grid-area: 2 / 2;
